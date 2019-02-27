@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PizzaProject.master.cs" Inherits="PPFrontEnd.PizzaProject" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head id="Head1" runat="server">
+        <title>Sample Master Page</title>
+        <link href="PizzaProject.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <form id="form1" runat="server">
+ 
+             <header>
+            
+            </header>
+ 
+            <article>
+                
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    <p style="height: 447px">
+                        <br />
+                    </p>
+                </asp:ContentPlaceHolder>
+            </article>
+ 
+            <nav>
+                
+                <br />
+                <br />
+                <asp:Button ID="btnHomepage" runat="server" style="z-index: 1; left: 24px; top: 73px; position: absolute; width: 209px; height: 37px" Text="Homepage" OnClick="btnHomepage_Click" />
+                <br />
+                <br />
+                <asp:Button ID="btnStaff" runat="server" style="z-index: 1; left: 24px; top: 134px; position: absolute; width: 209px; height: 37px" Text="Staff" OnClick="btnStaff_Click1" />
+                <br />
+                <br />
+                <asp:Button ID="btnOrder" runat="server" style="z-index: 1; left: 26px; top: 208px; position: absolute; width: 204px; height: 37px; margin-top: 0px" Text="Order" />
+                <br />
+                <br />
+                <asp:Button ID="btnCustomer" runat="server" style="z-index: 1; left: 31px; top: 289px; position: absolute; width: 199px; height: 37px;" Text="Customer" />
+
+                <asp:Button ID="btnContact" runat="server" style="z-index: 1; left: 29px; top: 363px; position: absolute; width: 197px; height: 35px" Text="Contact Us" />
+
+            </nav>
+ 
+            <footer>
+                
+            </footer>
+             
+        </form>
+    </body>
+</html>
