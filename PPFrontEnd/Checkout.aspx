@@ -21,7 +21,7 @@
             <asp:Label ID="lbCardSecurityCode" runat="server" style="z-index: 1; left: 35px; top: 89px; position: absolute" Text="Card Security Code"></asp:Label>
             <asp:Label ID="lbAddress" runat="server" style="z-index: 1; left: 396px; top: 47px; position: absolute" Text="Address"></asp:Label>
         </p>
-        <asp:TextBox ID="tbCardExpiryDate" runat="server" style="z-index: 1; left: 186px; top: 46px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="tbCardExpiryDate" runat="server" style="z-index: 1; left: 186px; top: 46px; position: absolute" OnTextChanged="tbCardExpiryDate_TextChanged"></asp:TextBox>
         <asp:Label ID="lbCardNumber" runat="server" style="z-index: 1; left: 36px; top: 132px; position: absolute" Text="Card Number"></asp:Label>
         <asp:TextBox ID="tbCardSecurityCode" runat="server" style="z-index: 1; left: 203px; top: 87px; position: absolute"></asp:TextBox>
         <asp:TextBox ID="tbCardNumber" runat="server" style="z-index: 1; left: 165px; top: 129px; position: absolute"></asp:TextBox>

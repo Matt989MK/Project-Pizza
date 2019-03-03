@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPBackOffice", "PPBackOffic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPFrontEnd", "PPFrontEnd\PPFrontEnd.csproj", "{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaProjectTesting", "PizzaProjectTesting\PizzaProjectTesting.csproj", "{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
