@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Connect4", "Connect4\", "{BD2722AB-8805-4156-BA12-F7E67238AEF4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_14944"
+		Debug.AspNetCompiler.PhysicalPath = "Connect4\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14944\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_14944"
+		Release.AspNetCompiler.PhysicalPath = "Connect4\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14944\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "14944"
+		SlnRelativePath = "Connect4\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPBackOffice", "PPBackOffice\PPBackOffice.csproj", "{9DA0F0EE-4970-4360-ADC9-156F927E729B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPFrontEnd", "PPFrontEnd\PPFrontEnd.csproj", "{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaProjectTesting", "PizzaProjectTesting\PizzaProjectTesting.csproj", "{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD2722AB-8805-4156-BA12-F7E67238AEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2722AB-8805-4156-BA12-F7E67238AEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2722AB-8805-4156-BA12-F7E67238AEF4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2722AB-8805-4156-BA12-F7E67238AEF4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9DA0F0EE-4970-4360-ADC9-156F927E729B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA0F0EE-4970-4360-ADC9-156F927E729B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA0F0EE-4970-4360-ADC9-156F927E729B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA0F0EE-4970-4360-ADC9-156F927E729B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2447DF2-4BC8-44A7-8AFD-E84ABACA6389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EF494A-B217-47AC-A6C7-6ED68CDEF9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36504CA4-9E8A-4BF9-8F0D-70E8320F4E2A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿body {
+    background-color: #bdbdbd;
+}
+
+header {
+    background-color: #d67f40;
+    height: 10%;
+    position: fixed;
+    width: 100%;
+    top: 5%;
+    left: 1%;
+}
+
+footer {
+    background-color: #d67f40;
+    height: 10%;
+    position: fixed;
+    width: 100%;
+    top: 90%;
+    left: 1%;
+}
+
+nav {
+    background-color: #e96c14;
+    position: fixed;
+    width: 20%;
+    height: 90%;
+    top: 10%;
+    left: 1%;
+}
+
+article {
+    background-color: #bdbdbd;
+    position: fixed;
+    width: 73%;
+    top: 18%;
+    left: 22%;
+    height: 455px;
+}

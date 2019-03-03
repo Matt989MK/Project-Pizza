@@ -1,0 +1,224 @@
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\PPFrontEnd.dll.config
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\PPFrontEnd.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\PPFrontEnd.pdb
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\csc.exe
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\csc.exe.config
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\csc.rsp
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\csi.exe
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\csi.exe.config
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\csi.rsp
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.AppContext.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Console.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\vbc.exe
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\vbc.exe.config
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\vbc.rsp
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csprojAssemblyReference.cache
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.dll
+C:\Chris\Year 02\IMAT2204\Pizza Project\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.pdb
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\PPFrontEnd.dll.config
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\PPFrontEnd.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\PPFrontEnd.pdb
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\csc.exe
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\csc.exe.config
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\csc.rsp
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\csi.exe
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\csi.exe.config
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\csi.rsp
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Console.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\vbc.exe
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\vbc.rsp
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csprojAssemblyReference.cache
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.dll
+C:\Users\moffi\Desktop\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.pdb
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\PPFrontEnd.dll.config
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\PPFrontEnd.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\PPFrontEnd.pdb
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\csc.exe
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\csc.exe.config
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\csc.rsp
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\csi.exe
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\csi.exe.config
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\csi.rsp
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.AppContext.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Collections.Immutable.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Console.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Compression.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.FileSystem.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.IO.Pipes.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.AccessControl.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Claims.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.ValueTuple.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XPath.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\vbc.exe
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\vbc.exe.config
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\vbc.rsp
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\VBCSCompiler.exe
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\roslyn\VBCSCompiler.exe.config
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Almostfinished\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csprojAssemblyReference.cache
+E:\Almostfinished\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache
+E:\Almostfinished\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
+E:\Almostfinished\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.dll
+E:\Almostfinished\PizzaProject\PPFrontEnd\obj\Debug\PPFrontEnd.pdb
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\PPFrontEnd.dll.config
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\PPFrontEnd.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\PPFrontEnd.pdb
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\csc.exe
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\csc.exe.config
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\csc.rsp
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\csi.exe
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\csi.exe.config
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\csi.rsp
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Console.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\vbc.exe
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\vbc.rsp
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csprojAssemblyReference.cache
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.pdb
