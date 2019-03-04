@@ -68,12 +68,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddStaff.aspx" />
+    <Content Include="App_Data\Orders.mdf" />
+    <Content Include="App_Data\Orders_log.ldf">
+      <DependentUpon>Orders.mdf</DependentUpon>
+    </Content>
     <Content Include="Checkout.aspx" />
     <Content Include="CustomerDetails.aspx" />
     <Content Include="FailedOrder.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
     <Content Include="Menu.aspx" />
+    <Content Include="OrderAdmin.aspx" />
     <Content Include="PizzaProject.css" />
     <Content Include="Staff.aspx" />
     <Content Include="SuccessfulOrder.aspx" />
@@ -87,6 +92,9 @@
     <Compile Include="AddStaff.aspx.designer.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\clsOrderCollection.cs" />
+    <Content Include="App_Code\clsOrder.cs" />
+    <Content Include="App_Code\clsDataConnection.cs" />
     <Compile Include="Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,6 +133,13 @@
     <Compile Include="Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OrderAdmin.aspx.cs">
+      <DependentUpon>OrderAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderAdmin.aspx.designer.cs">
+      <DependentUpon>OrderAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PizzaProject.Master.cs">
       <DependentUpon>PizzaProject.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,7 +174,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
