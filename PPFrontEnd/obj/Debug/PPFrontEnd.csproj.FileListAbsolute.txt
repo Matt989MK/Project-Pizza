@@ -215,11 +215,8 @@ C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\vbc.exe.config
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\vbc.rsp
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\VBCSCompiler.exe
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csprojAssemblyReference.cache
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache
-C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.dll
 C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.pdb
 H:\Desktop\Pizza-Github\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache

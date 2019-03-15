@@ -4,6 +4,7 @@ namespace PizzaProjectTesting
 {
     class clsOrder
     {
+        public int OrderNo { get; internal set; }
         public DateTime CardExpiryNumber { get; internal set; }
         public string CardNumber { get; internal set; }
         public string CardSecurityCode { get; internal set; }

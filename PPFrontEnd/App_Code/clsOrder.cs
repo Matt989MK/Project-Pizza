@@ -20,6 +20,18 @@ namespace PPFrontEnd.App_Code
                 mCardNumber = value;
             }
         }
+        private string mOrderNo;
+        public string OrderId
+        {
+            get
+            {
+                return mOrderNo;
+            }
+            set
+            {
+                mOrderNo = value;
+            }
+        }
         private string mCardSecurityNumber;
 
         public string CardSecurityNumber
@@ -105,8 +117,8 @@ namespace PPFrontEnd.App_Code
                 mDeliveryPrice = value;
             }
         }
-        private int mOrderDescription;
-        public int OrderDescription
+        private string mOrderDescription;
+        public string OrderDescription
         {
             get
             {
