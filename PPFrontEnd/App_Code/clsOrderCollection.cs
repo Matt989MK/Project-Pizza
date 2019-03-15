@@ -8,8 +8,8 @@ namespace PPFrontEnd.App_Code
     public class clsOrderCollection
     {
         clsDataConnection dbConnection;
-        clsOrder mThisOrder = new clsOrder();
-
+        public clsOrder mThisOrder = new clsOrder();
+        
         public clsOrder ThisOrder
         {
             get
