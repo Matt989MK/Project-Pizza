@@ -13,7 +13,7 @@
             &nbsp;</p>
         <p>
             <asp:Label ID="lbCardExpiryDate" runat="server" style="z-index: 1; left: 34px; top: 47px; position: absolute" Text="Card Expiry Date"></asp:Label>
-            <asp:TextBox ID="tbAddress" runat="server" style="z-index: 1; left: 465px; top: 46px; position: absolute"></asp:TextBox>
+            <asp:TextBox ID="tbAddress" runat="server" style="z-index: 1; left: 465px; top: 46px; position: absolute" OnTextChanged="tbAddress_TextChanged"></asp:TextBox>
         </p>
         <p>
             <asp:Button ID="btApplyVoucher" runat="server" style="z-index: 1; left: 970px; top: 15px; position: absolute" Text="Apply Voucher" OnClick="btApplyVoucher_Click" />
