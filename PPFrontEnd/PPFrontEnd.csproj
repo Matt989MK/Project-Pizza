@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddStaff.aspx" />
+    <Content Include="AdminOrderDisplay.aspx" />
     <Content Include="App_Data\Orders.mdf" />
     <Content Include="App_Data\Orders_log.ldf">
       <DependentUpon>Orders.mdf</DependentUpon>
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="AddStaff.aspx.designer.cs">
       <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOrderDisplay.aspx.cs">
+      <DependentUpon>AdminOrderDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminOrderDisplay.aspx.designer.cs">
+      <DependentUpon>AdminOrderDisplay.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\clsOrderCollection.cs" />
     <Compile Include="App_Code\clsOrder.cs" />
