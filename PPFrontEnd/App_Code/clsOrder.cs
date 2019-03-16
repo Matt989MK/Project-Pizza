@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
 namespace PPFrontEnd.App_Code
 {
     public class clsOrder
@@ -20,6 +19,16 @@ namespace PPFrontEnd.App_Code
                 mCardNumber = value;
             }
         }
+        private string mEmail;
+        public string Email {
+            get
+            {
+                return mEmail;
+            }
+            set {
+                Email = mEmail;
+            }
+            }
         private string mOrderNo;
         public string OrderId
         {

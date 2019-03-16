@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using PPFrontEnd.PPFrontEnd.App_Code;
+using PPFrontEnd.App_Code;
 namespace PPFrontEnd
 {
     public partial class Checkout : System.Web.UI.Page
@@ -38,10 +38,16 @@ namespace PPFrontEnd
 
         protected void btOrder_Click(object sender, EventArgs e)
         {
-       
-           clsOrderCollection
+            
+            clsOrderCollection OrderCollection = new clsOrderCollection();
+            OrderCollection.ThisOrder.CardNumber= tbCardNumber.Text;
+            OrderCollection.ThisOrder.CardExpiryDate =Convert.ToDateTime(tbCardExpiryDate.Text);
+            OrderCollection.ThisOrder.CardSecurityNumber = tbCardSecurityCode.Text;
+            OrderCollection.ThisOrder.MobilePhone = tbPhoneNumber.Text;
+            OrderCollection.ThisOrder.CustomerAddress = tbAddress.Text;
+            OrderCollection.ThisOrder.Voucher = tbVoucherCode.Text;
+            OrderCollection.ThisOrder.Email = tbEmail.Text;
 
-            tbCardExpiryDate.Text;
             Response.Redirect("SuccessfulOrder.aspx");
             //Response.Redirect("FailedOrder.aspx");
         }

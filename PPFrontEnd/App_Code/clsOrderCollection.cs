@@ -7,8 +7,8 @@ namespace PPFrontEnd.App_Code
 {
     public class clsOrderCollection
     {
-        clsDataConnection dbConnection;
-        clsOrder mThisOrder = new clsOrder();
+        private clsDataConnection dbConnection=new clsDataConnection();
+        private  clsOrder mThisOrder = new clsOrder();
 
         public clsOrder ThisOrder
         {

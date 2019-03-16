@@ -92,8 +92,8 @@
       <DependentUpon>AddStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Code\clsOrderCollection.cs" />
-    <Content Include="App_Code\clsOrder.cs" />
-    <Content Include="App_Code\clsDataConnection.cs" />
+    <Compile Include="App_Code\clsOrder.cs" />
+    <Compile Include="App_Code\clsDataConnection.cs" />
     <Compile Include="Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
