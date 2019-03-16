@@ -13,7 +13,7 @@
             &nbsp;</p>
         <p>
             <asp:Label ID="lbCardExpiryDate" runat="server" style="z-index: 1; left: 34px; top: 47px; position: absolute" Text="Card Expiry Date"></asp:Label>
-            <asp:TextBox ID="tbAddress" runat="server" style="z-index: 1; left: 465px; top: 46px; position: absolute"></asp:TextBox>
+            <asp:TextBox ID="tbAddress" runat="server" style="z-index: 1; left: 465px; top: 46px; position: absolute" OnTextChanged="tbAddress_TextChanged"></asp:TextBox>
         </p>
         <p>
             <asp:Button ID="btApplyVoucher" runat="server" style="z-index: 1; left: 970px; top: 15px; position: absolute" Text="Apply Voucher" OnClick="btApplyVoucher_Click" />
@@ -39,7 +39,7 @@
         <asp:TextBox ID="tbPhoneNumber" runat="server" style="z-index: 1; left: 491px; top: 82px; position: absolute"></asp:TextBox>
         <asp:Label ID="lbPhoneNumber" runat="server" style="z-index: 1; left: 366px; top: 82px; position: absolute" Text="Phone Number"></asp:Label>
         <asp:Label ID="lbEmail" runat="server" style="z-index: 1; left: 363px; top: 129px; position: absolute; height: 20px;" Text="Email"></asp:Label>
-        <asp:TextBox ID="tbEmail" runat="server" style="z-index: 1; left: 421px; top: 128px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="tbEmail" runat="server" style="z-index: 1; left: 455px; top: 135px; position: absolute"></asp:TextBox>
     </form>
 </body>
 </html>
