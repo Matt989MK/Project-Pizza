@@ -37,6 +37,8 @@ namespace PPFrontEnd.App_Code
             NewOrder.AddParameter("@CustomerAddress", mThisOrder.CustomerAddress);
             //add the MobilePhone parameter
             NewOrder.AddParameter("@MobilePhone", mThisOrder.MobilePhone);
+            //add the email parameter
+            NewOrder.AddParameter("@Email", mThisOrder.Email);
             //add the Voucher parameter
             NewOrder.AddParameter("@Voucher", mThisOrder.Voucher);
             //add the DeliveryTime parameter
@@ -70,6 +72,8 @@ namespace PPFrontEnd.App_Code
             NewOrder.AddParameter("@CustomerAddress", mThisOrder.CustomerAddress);
             //add the MobilePhone parameter
             NewOrder.AddParameter("@MobilePhone", mThisOrder.MobilePhone);
+            //add the email parameter
+            NewOrder.AddParameter("@Email", mThisOrder.Email);
             //add the Voucher parameter
             NewOrder.AddParameter("@Voucher", mThisOrder.Voucher);
             //add the DeliveryTime parameter
@@ -135,6 +139,8 @@ namespace PPFrontEnd.App_Code
                     NewOrder.CustomerAddress = Convert.ToString(dBConnection.DataTable.Rows[Index]["CustomerAddress"]);
                     //get the address no from the query results
                     NewOrder.MobilePhone = Convert.ToString(dBConnection.DataTable.Rows[Index]["MobilePhone"]);
+                    //get the address no from the query results
+                    NewOrder.MobilePhone = Convert.ToString(dBConnection.DataTable.Rows[Index]["Email"]);
                     //get the address no from the query results
                     NewOrder.Voucher = Convert.ToString(dBConnection.DataTable.Rows[Index]["Voucher"]);
                     //get the address no from the query results

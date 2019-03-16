@@ -274,3 +274,6 @@ H:\Desktop\Pizza-Github\PPFrontEnd\bin\roslyn\VBCSCompiler.exe.config
 H:\Desktop\Pizza-Github\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 H:\Desktop\Pizza-Github\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 H:\Desktop\Pizza-Github\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\moffi\Source\Repos\Project-Pizza\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete

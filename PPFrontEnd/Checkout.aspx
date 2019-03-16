@@ -39,7 +39,7 @@
         <asp:TextBox ID="tbPhoneNumber" runat="server" style="z-index: 1; left: 491px; top: 82px; position: absolute"></asp:TextBox>
         <asp:Label ID="lbPhoneNumber" runat="server" style="z-index: 1; left: 366px; top: 82px; position: absolute" Text="Phone Number"></asp:Label>
         <asp:Label ID="lbEmail" runat="server" style="z-index: 1; left: 363px; top: 129px; position: absolute; height: 20px;" Text="Email"></asp:Label>
-        <asp:TextBox ID="tbEmail" runat="server" style="z-index: 1; left: 421px; top: 128px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="tbEmail" runat="server" style="z-index: 1; left: 455px; top: 135px; position: absolute"></asp:TextBox>
     </form>
 </body>
 </html>
