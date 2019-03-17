@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-namespace PPFrontEnd.App_Code
+namespace PPFrontEnd
 {
     public class clsOrder
     {
@@ -29,8 +29,8 @@ namespace PPFrontEnd.App_Code
                 mEmail=value;
             }
             }
-        private string mOrderNo;
-        public string OrderId
+        private int mOrderNo;
+        public int OrderId
         {
             get
             {

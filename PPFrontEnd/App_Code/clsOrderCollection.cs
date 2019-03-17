@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PPFrontEnd.App_Code
+namespace PPFrontEnd
 {
-    public class clsOrderCollection
+     internal class  clsOrderCollection
     {
         private clsDataConnection dbConnection=new clsDataConnection();
         private  clsOrder mThisOrder = new clsOrder();

@@ -4,8 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
-using PPFrontEnd.App_Code;
 namespace PPFrontEnd
 {
     public partial class Checkout : System.Web.UI.Page
@@ -60,7 +58,8 @@ namespace PPFrontEnd
             //if there is no error message
             if (ErrorMsg == "")
             {
-                
+                /*TEST ID*/
+              //  OrderCollection.ThisOrder.OrderId = 1;
                     OrderCollection.ThisOrder.CardNumber = tbCardNumber.Text;
                     OrderCollection.ThisOrder.CardExpiryDate = Convert.ToDateTime(tbCardExpiryDate.Text);
                     OrderCollection.ThisOrder.CardSecurityNumber = tbCardSecurityCode.Text;
@@ -71,6 +70,7 @@ namespace PPFrontEnd
                     OrderCollection.ThisOrder.DeliveryPrice = Convert.ToInt32(lbOrderPriceDisplay.Text);
                     OrderCollection.ThisOrder.OrderDescription = tbOrders.Text;
                     OrderCollection.Add();
+                //OrderCollection.Update();
                 
                 
             }
