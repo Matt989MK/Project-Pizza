@@ -11,9 +11,11 @@ namespace PPFrontEnd
     public partial class Checkout : System.Web.UI.Page
     {
         Int32 OrderId;
-      
+       
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+           
          OrderId= Convert.ToInt32(Session["OrderId"]);
         }
 
@@ -76,6 +78,11 @@ namespace PPFrontEnd
         }
 
         protected void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void tbAddress_TextChanged(object sender, EventArgs e)
         {
 
         }
