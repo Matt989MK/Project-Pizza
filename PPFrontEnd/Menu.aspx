@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server" action="Checkout.aspx">
+    <form id="form1" runat="server" >
         <asp:Button ID="btCheckout" runat="server" OnClick="btCheckout_Click" style="z-index: 1; left: 18px; top: 263px; position: absolute" Text="Checkout" />
         <asp:Label ID="lbPizza2" runat="server" style="z-index: 1; left: 9px; top: 71px; position: absolute" Text="Pizza 2"></asp:Label>
         <asp:Label ID="lbPizza1" runat="server" style="z-index: 1; left: 10px; top: 34px; position: absolute; bottom: 300px" Text="Pizza 1"></asp:Label>
@@ -36,5 +36,6 @@
         <asp:Label ID="Label2" runat="server" style="z-index: 1; left: 292px; top: 22px; position: absolute" Text="Current Order"></asp:Label>
         <asp:Label ID="lbPizza3Price" runat="server" style="z-index: 1; left: 69px; top: 107px; position: absolute" Text="20"></asp:Label>
     </form>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Checkout.aspx">HyperLink</asp:HyperLink>
 </body>
 </html>

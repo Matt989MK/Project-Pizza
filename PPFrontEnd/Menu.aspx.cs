@@ -22,7 +22,9 @@ namespace PPFrontEnd
         
         protected void btCheckout_Click(object sender, EventArgs e)
         {
-          
+            HyperLink1.Target = "Checkout.aspx"+"?";
+            Response.Redirect("Checkout.aspx",false);
+          //  Response.Redirect("Checkout.aspx")..GetPostBackClientEvent(tbCurrentOrder.Text);
         }
 
         protected void btPizza1Add_Click(object sender, EventArgs e)
@@ -34,6 +36,7 @@ namespace PPFrontEnd
                 tbCurrentOrder.Text += item +Environment.NewLine;
             }
             lbProductsInBasket.Text = shoppingList.Count().ToString();
+            HyperLink1.NavigateUrl = "Checkout.aspx" + "?"+"tbCurrentOrder="+tbCurrentOrder.Text;
 
         }
 
@@ -46,6 +49,8 @@ namespace PPFrontEnd
                 tbCurrentOrder.Text += item + Environment.NewLine;
             }
             lbProductsInBasket.Text = shoppingList.Count().ToString();
+            HyperLink1.NavigateUrl = "Checkout.aspx" + "?" + "tbCurrentOrder=" + tbCurrentOrder.Text;
+
         }
 
         protected void btPizza3Add_Click(object sender, EventArgs e)
@@ -57,6 +62,8 @@ namespace PPFrontEnd
                 tbCurrentOrder.Text += item + Environment.NewLine;
             }
             lbProductsInBasket.Text = shoppingList.Count().ToString();
+            HyperLink1.NavigateUrl = "Checkout.aspx" + "?" + "tbCurrentOrder=" + tbCurrentOrder.Text;
+
         }
 
         protected void btPizza1Remove_Click(object sender, EventArgs e)
@@ -68,6 +75,8 @@ namespace PPFrontEnd
                 tbCurrentOrder.Text += item + Environment.NewLine;
             }
             lbProductsInBasket.Text = shoppingList.Count().ToString();
+            HyperLink1.NavigateUrl = "Checkout.aspx" + "?" + "tbCurrentOrder=" + tbCurrentOrder.Text;
+
         }
 
         protected void btPizza2Remove_Click(object sender, EventArgs e)
@@ -79,6 +88,7 @@ namespace PPFrontEnd
                 tbCurrentOrder.Text += item + Environment.NewLine;
             }
             lbProductsInBasket.Text = shoppingList.Count().ToString();
+            HyperLink1.NavigateUrl = "Checkout.aspx" + "?" + "tbCurrentOrder=" + tbCurrentOrder.Text;
 
         }
 
@@ -91,6 +101,7 @@ namespace PPFrontEnd
                 tbCurrentOrder.Text += item + Environment.NewLine;
             }
             lbProductsInBasket.Text = shoppingList.Count().ToString();
+            HyperLink1.NavigateUrl = "Checkout.aspx" + "?" + "tbCurrentOrder=" + tbCurrentOrder.Text;
 
         }
     }

@@ -11,10 +11,20 @@ namespace PPFrontEnd
     public partial class Checkout : System.Web.UI.Page
     {
         Int32 OrderId;
-       
+        Int32 OrderPrice = 0;
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            string br = Request.Params["tbCurrentOrder"];
+           
+            for (int i = 0; i < br.Length; i++)
+            {
+                tbOrders.Text += br[i];
+                if (br[i]=='1') {  tbOrders.Text +=Environment.NewLine; OrderPrice += 10; }
+                if (br[i]=='2') { tbOrders.Text += Environment.NewLine; OrderPrice += 15; }
+                if (br[i]=='3') { tbOrders.Text += Environment.NewLine; OrderPrice += 20; }
+                lbOrderPriceDisplay.Text = OrderPrice.ToString();
+            }
            
          OrderId= Convert.ToInt32(Session["OrderId"]);
         }
