@@ -49,7 +49,7 @@ namespace PPFrontEnd.App_Code
             NewOrder.AddParameter("@OrderDescription", mThisOrder.OrderDescription);
 
             //execute the query to add the record - it will return the primary key value of the new record
-            PrimaryKey = NewOrder.Execute("sproc_tblAddress_Insert");
+            PrimaryKey = NewOrder.Execute("sproc_tblOrders_Insert");
             //return the primary key value of the new record
             return PrimaryKey;
         }

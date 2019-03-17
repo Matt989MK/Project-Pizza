@@ -60,8 +60,7 @@ namespace PPFrontEnd
             //if there is no error message
             if (ErrorMsg == "")
             {
-                if (OrderId == -1)
-                {
+                
                     OrderCollection.ThisOrder.CardNumber = tbCardNumber.Text;
                     OrderCollection.ThisOrder.CardExpiryDate = Convert.ToDateTime(tbCardExpiryDate.Text);
                     OrderCollection.ThisOrder.CardSecurityNumber = tbCardSecurityCode.Text;
@@ -69,8 +68,10 @@ namespace PPFrontEnd
                     OrderCollection.ThisOrder.CustomerAddress = tbAddress.Text;
                     OrderCollection.ThisOrder.Voucher = tbVoucherCode.Text;
                     OrderCollection.ThisOrder.Email = tbEmail.Text;
+                    OrderCollection.ThisOrder.DeliveryPrice = Convert.ToInt32(lbOrderPriceDisplay.Text);
+                    OrderCollection.ThisOrder.OrderDescription = tbOrders.Text;
                     OrderCollection.Add();
-                }
+                
                 
             }
             else//there are errors

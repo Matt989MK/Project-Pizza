@@ -26,7 +26,7 @@ namespace PPFrontEnd.App_Code
                 return mEmail;
             }
             set {
-                Email = mEmail;
+                mEmail=value;
             }
             }
         private string mOrderNo;
