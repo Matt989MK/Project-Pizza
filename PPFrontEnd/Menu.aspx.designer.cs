@@ -58,6 +58,15 @@ namespace PPFrontEnd {
         protected global::System.Web.UI.WebControls.Button btPizza1Add;
         
         /// <summary>
+        /// lbPizza1Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbPizza1Price;
+        
+        /// <summary>
         /// btPizza2Add control.
         /// </summary>
         /// <remarks>
@@ -74,6 +83,15 @@ namespace PPFrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btPizza1Remove;
+        
+        /// <summary>
+        /// lbPizza2Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbPizza2Price;
         
         /// <summary>
         /// lbPizza3 control.
@@ -146,5 +164,23 @@ namespace PPFrontEnd {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// lbPizza3Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbPizza3Price;
+        
+        /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

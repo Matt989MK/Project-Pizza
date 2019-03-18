@@ -2,7 +2,7 @@
 
 namespace PizzaProjectTesting
 {
-    class clsOrder
+    class clstOrder
     {
         public int OrderNo { get; internal set; }
         public DateTime CardExpiryNumber { get; internal set; }

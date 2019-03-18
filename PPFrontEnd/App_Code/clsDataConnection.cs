@@ -27,11 +27,25 @@ public class clsDataConnection
 
     public clsDataConnection()
     {
+        GetConString(GetDBName());
+    }
+
+    public clsDataConnection(string DBLocation)
+    {
+        GetConString(DBLocation);
+    }
+
+
+    private string GetConString(string SomePath)
+    {
         //build up the connection string for the sql server database Visual Studio 2010
         //connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;User Instance=True";
         //build up the connection string for the sql server database Visual Studio 2012
         //connectionString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;Connect Timeout=30";
-        connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + GetDBName() + "\";Integrated Security=True;Connect Timeout=30";
+        //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + GetDBName() + "\";Integrated Security=True;Connect Timeout=30";
+        connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"###\";Integrated Security=True;Connect Timeout=30";
+        connectionString = connectionString.Replace("###", SomePath);
+        return connectionString;
     }
 
     public string GetDBName()
@@ -178,14 +192,7 @@ public class clsDataConnection
         //use the copmmand builder to generate the sql insert delete etc
         commandBuilder = new SqlCommandBuilder(dataChannel);
         //fill the data adapter
-        try
-        {
-            dataChannel.Fill(dataTable);
-        }
-        catch
-        {
-            throw new System.Exception("Could not get the data.  Check that you have the correct name for your stored procedure.");
-        }
+        dataChannel.Fill(dataTable);
         //close the connection
         connectionToDB.Close();
         //return the result of the stored procedure
@@ -217,5 +224,6 @@ public class clsDataConnection
         }
     }
 }
+
 
 

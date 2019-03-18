@@ -14,13 +14,13 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void InstanceOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             Assert.IsNotNull(cOrder);
         }
         [TestMethod]
         public void OrderCardExpiryNumberOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             DateTime cardExpiryNumber= new DateTime(2017, 1, 18);
             cOrder.CardExpiryNumber = cardExpiryNumber;
             Assert.AreEqual(cOrder.CardExpiryNumber, cardExpiryNumber);
@@ -28,7 +28,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderCardNumberOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string cardNumber = "1234567891234567";
             cOrder.CardNumber = cardNumber;
             Assert.AreEqual(cOrder.CardNumber, cardNumber);
@@ -36,7 +36,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderCardSecurityCodeOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string cardSecurityCode = "123";
             cOrder.CardSecurityCode = cardSecurityCode;
             Assert.AreEqual(cOrder.CardSecurityCode, cardSecurityCode);
@@ -44,7 +44,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderCustomerMobileOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string customerMobile = "123";
             cOrder.CustomerMobile = customerMobile;
             Assert.AreEqual(cOrder.CustomerMobile, customerMobile);
@@ -52,7 +52,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderDeliveryAddressOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string deliveryAddress = "123";
             cOrder.DeliveryAddress = deliveryAddress;
             Assert.AreEqual(cOrder.DeliveryAddress, deliveryAddress);
@@ -60,7 +60,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderDeliveryTimeOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             int deliveryTime = 60;
             cOrder.DeliveryTime = deliveryTime;
             Assert.AreEqual(cOrder.DeliveryTime, deliveryTime);
@@ -68,7 +68,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderIDOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string id = "1";
             cOrder.ID = id;
             Assert.AreEqual(cOrder.ID, id);
@@ -76,7 +76,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderPriceOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             int price = 60;
             cOrder.Price = price;
             Assert.AreEqual(cOrder.Price, price);
@@ -84,7 +84,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderStatusOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string status = "ready";
             cOrder.Status = status;
             Assert.AreEqual(cOrder.Status, status);
@@ -92,7 +92,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void OrderVoucherOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string voucher = "abcjhf23";
             cOrder.Voucher = voucher;
             Assert.AreEqual(cOrder.Voucher, voucher);
@@ -100,7 +100,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void FindIDOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string Error = "";
             string ID = "2";
             Error = cOrder.FindID(ID);
@@ -109,7 +109,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void VoucherDiscountOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string Error = "";
             string voucher = "absd2";
             Error = cOrder.VoucherDiscount(voucher);
@@ -118,7 +118,7 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void ValidOK()
         {
-            clsOrder cOrder = new clsOrder();
+            clstOrder cOrder = new clstOrder();
             string Error = "";
             string cardNumber="1234567891234567";
             string cardSecurityCode="123";

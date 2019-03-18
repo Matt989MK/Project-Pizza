@@ -1,7 +1,6 @@
 C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\bin\Debug\PPBackOffice.exe.config
 C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\bin\Debug\PPBackOffice.exe
 C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\bin\Debug\PPBackOffice.pdb
-C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\obj\Debug\PPBackOffice.csprojAssemblyReference.cache
 C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\obj\Debug\PPBackOffice.Properties.Resources.resources
 C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateResource.cache
 C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
@@ -15,3 +14,4 @@ H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateResou
 H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
 H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.exe
 H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.pdb
+C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\obj\Debug\PPBackOffice.csprojAssemblyReference.cache

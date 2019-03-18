@@ -4,16 +4,26 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
-using PPFrontEnd.App_Code;
 namespace PPFrontEnd
 {
     public partial class Checkout : System.Web.UI.Page
     {
         Int32 OrderId;
-      
+        Int32 OrderPrice = 0;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+            string br = Request.Params["tbCurrentOrder"];
+           
+            for (int i = 0; i < br.Length; i++)
+            {
+                tbOrders.Text += br[i];
+                if (br[i]=='1') {  tbOrders.Text +=Environment.NewLine; OrderPrice += 10; }
+                if (br[i]=='2') { tbOrders.Text += Environment.NewLine; OrderPrice += 15; }
+                if (br[i]=='3') { tbOrders.Text += Environment.NewLine; OrderPrice += 20; }
+                lbOrderPriceDisplay.Text = OrderPrice.ToString();
+            }
+           
          OrderId= Convert.ToInt32(Session["OrderId"]);
         }
 
@@ -48,8 +58,8 @@ namespace PPFrontEnd
             //if there is no error message
             if (ErrorMsg == "")
             {
-                if (OrderId == -1)
-                {
+                /*TEST ID*/
+              //  OrderCollection.ThisOrder.OrderId = 1;
                     OrderCollection.ThisOrder.CardNumber = tbCardNumber.Text;
                     OrderCollection.ThisOrder.CardExpiryDate = Convert.ToDateTime(tbCardExpiryDate.Text);
                     OrderCollection.ThisOrder.CardSecurityNumber = tbCardSecurityCode.Text;
@@ -57,8 +67,12 @@ namespace PPFrontEnd
                     OrderCollection.ThisOrder.CustomerAddress = tbAddress.Text;
                     OrderCollection.ThisOrder.Voucher = tbVoucherCode.Text;
                     OrderCollection.ThisOrder.Email = tbEmail.Text;
+                    OrderCollection.ThisOrder.DeliveryPrice = Convert.ToInt32(lbOrderPriceDisplay.Text);
+                OrderCollection.ThisOrder.DeliveryTime = 20.ToString();
+                    OrderCollection.ThisOrder.OrderDescription = tbOrders.Text;
                     OrderCollection.Add();
-                }
+                //OrderCollection.Update();
+                
                 
             }
             else//there are errors
@@ -76,6 +90,11 @@ namespace PPFrontEnd
         }
 
         protected void tbEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void tbAddress_TextChanged(object sender, EventArgs e)
         {
 
         }

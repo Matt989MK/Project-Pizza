@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PPFrontEnd.App_Code
+namespace PPFrontEnd
 {
-    public class clsOrderCollection
+     internal class  clsOrderCollection
     {
         private clsDataConnection dbConnection=new clsDataConnection();
         private  clsOrder mThisOrder = new clsOrder();
@@ -26,7 +26,7 @@ namespace PPFrontEnd.App_Code
             Int32 PrimaryKey;
             //create a connection to the database
             clsDataConnection NewOrder = new clsDataConnection();
-            NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
+           // NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
             //add the CardNumber parameter
             NewOrder.AddParameter("@CardNumber", mThisOrder.CardNumber);
             //add the CardSecurityNumber parameter
@@ -49,7 +49,7 @@ namespace PPFrontEnd.App_Code
             NewOrder.AddParameter("@OrderDescription", mThisOrder.OrderDescription);
 
             //execute the query to add the record - it will return the primary key value of the new record
-            PrimaryKey = NewOrder.Execute("sproc_tblAddress_Insert");
+            PrimaryKey = NewOrder.Execute("sproc_tblOrder_Insert");
             //return the primary key value of the new record
             return PrimaryKey;
         }
