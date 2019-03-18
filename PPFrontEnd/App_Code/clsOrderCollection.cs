@@ -26,7 +26,7 @@ namespace PPFrontEnd
             Int32 PrimaryKey;
             //create a connection to the database
             clsDataConnection NewOrder = new clsDataConnection();
-            NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
+           // NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
             //add the CardNumber parameter
             NewOrder.AddParameter("@CardNumber", mThisOrder.CardNumber);
             //add the CardSecurityNumber parameter
