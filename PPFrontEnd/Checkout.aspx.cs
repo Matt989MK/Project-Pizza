@@ -68,6 +68,7 @@ namespace PPFrontEnd
                     OrderCollection.ThisOrder.Voucher = tbVoucherCode.Text;
                     OrderCollection.ThisOrder.Email = tbEmail.Text;
                     OrderCollection.ThisOrder.DeliveryPrice = Convert.ToInt32(lbOrderPriceDisplay.Text);
+                OrderCollection.ThisOrder.DeliveryTime = 20.ToString();
                     OrderCollection.ThisOrder.OrderDescription = tbOrders.Text;
                     OrderCollection.Add();
                 //OrderCollection.Update();

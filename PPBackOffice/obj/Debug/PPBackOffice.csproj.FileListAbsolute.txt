@@ -14,3 +14,4 @@ H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateResou
 H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
 H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.exe
 H:\Desktop\Pizza-Github\PPBackOffice\obj\Debug\PPBackOffice.pdb
+C:\Users\moffi\Source\Repos\Project-Pizza\PPBackOffice\obj\Debug\PPBackOffice.csprojAssemblyReference.cache
