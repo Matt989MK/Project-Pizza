@@ -82,7 +82,8 @@ namespace MyTesting_Customer
             }
         }
 
-       
+        public bool Find (int CustomerID)
+       {
             mCustomerID = 1;
             mAddress = "15 street";
             mFirstName = "John";
