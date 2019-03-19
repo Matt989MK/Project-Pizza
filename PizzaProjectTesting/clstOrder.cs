@@ -11,9 +11,8 @@ namespace PizzaProjectTesting
         public string CustomerMobile { get; internal set; }
         public string DeliveryAddress { get; internal set; }
         public int DeliveryTime { get; internal set; }
-        public string ID { get; internal set; }
+        public string CustomerId { get; internal set; }
         public int Price { get; internal set; }
-        public string Status { get; internal set; }
         public string Voucher { get; internal set; }
 
         internal string FindID(string iD) // cant be letters
@@ -36,13 +35,14 @@ namespace PizzaProjectTesting
                 return "";
         }
 
-        internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress)
+        internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime,string customerId, int price, string voucher)
         {
             if (cardNumber.Length != 16) // cant be letters
             {
                 return "card number invalid";
             }
-            if (cardSecurityCode.Length != 3) // fix cant be letters
+            
+            if (cardSecurityCode.Length != 6) // fix cant be letters
             {
                 return "card security code invalid";
             }
@@ -54,10 +54,20 @@ namespace PizzaProjectTesting
             {
                 return "wrong mobile number";
             }
-            if (deliveryAddress == null) // cant be 
+            if (deliveryAddress.Length>50||deliveryAddress.Length<5) // cant be 
             {
                 return "address cannot be empty";
             }
+            if (deliveryTime < 10 || deliveryTime > 200)
+            {
+                return "delivery time impossible";
+            }
+            if (customerId == null)
+            {
+                return "customer id is null";
+            }
+            if(price <10 || price > 500) { return "price is incorrect"; }
+            if (voucher.Length < 5 || voucher.Length > 20) { return "voucher is incorrect"; }
             else return "";
         }
     }
