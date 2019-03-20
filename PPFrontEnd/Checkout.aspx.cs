@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PizzaProjectTesting;
 namespace PPFrontEnd
 {
     public partial class Checkout : System.Web.UI.Page
@@ -53,7 +54,9 @@ namespace PPFrontEnd
             string ErrorMsg="";
             //create an instance of the address class
                 clsOrderCollection OrderCollection = new clsOrderCollection();
+
             //use the objects validation method to test the data
+            ErrorMsg = "a"; // fix it to pizza testing
             //ErrorMsg = AddressBook.ThisAddress.Valid(txtHouseNo.Text, txtStreet.Text, txtTown.Text, txtPostCode.Text, txtDateAdded.Text);
             //if there is no error message
             if (ErrorMsg == "")
@@ -78,7 +81,7 @@ namespace PPFrontEnd
             else//there are errors
             {
                 //display the error message
-               // MessageBox.show(ErrorMsg);
+                Response.Redirect("FailedOrder.aspx");
             }
             Response.Redirect("SuccessfulOrder.aspx");
             //Response.Redirect("FailedOrder.aspx");
