@@ -2,7 +2,7 @@
 
 namespace PizzaProjectTesting
 {
-    class clstOrder
+    class clsOrder
     {
         public int OrderNo { get; internal set; }
         public DateTime CardExpiryNumber { get; internal set; }
@@ -34,7 +34,11 @@ namespace PizzaProjectTesting
             else
                 return "";
         }
-
+       
+        internal string clsOrderCollectionOrderList()
+        {
+            return "";
+        }
         internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime,string customerId, int price, string voucher)
         {
             if (cardNumber.Length != 16) // cant be letters

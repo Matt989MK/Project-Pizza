@@ -21,6 +21,7 @@ namespace PPFrontEnd
                 mThisOrder = value;
             }
         }
+  
         public Int32 Add()
         {
             Int32 PrimaryKey;
