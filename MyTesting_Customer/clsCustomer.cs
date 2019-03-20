@@ -109,7 +109,7 @@ namespace MyTesting_Customer
                 //    //return false indicating a problem
                 //    return false;
                 //}
-               mCustomerID = 1;
+            mCustomerID = 1;
             mAddress = "15 street";
             mFirstName = "John";
             mLastName = "Sab";
@@ -135,7 +135,72 @@ namespace MyTesting_Customer
             string Error = "";
             if (address.Length == 0)
             {
-                Error = Error + "The house no may not be blank: ";
+                Error = Error + "The may not be blank: ";
+            }
+            return Error;
+        }
+
+        internal string Valid(int customerID, Action firstName, Action lastName, Action address, string emailAddress, Action phoneNo)
+        {
+            string Error = "";
+            if (emailAddress.Length == 0)
+            {
+                Error = Error + "The EmailAdress may not be blank:";
+            }
+           
+            if (emailAddress.Length > 6)
+            {
+                Error = Error + "The EmailAdress may not be more than 50 characters:";
+            }
+            return Error;
+
+        }
+
+        internal string Valid(int customerID, string firstName, Action lastName, Action address, Action emailAddress, Action phoneNo)
+        {
+            string Error = "";
+            if (firstName.Length == 0)
+            {
+                Error = Error + "The firstname may not be blank:";
+            }
+
+            if (firstName.Length > 6)
+            {
+                Error = Error + "The firstname may not be more than 50 characters:";
+            }
+            else if (firstName.Length < 1)
+            {
+                Error = Error + "The firstname may not be single alphabet:";
+            }
+            return Error;
+
+        }
+
+        internal string Valid(int customerID, Action firstName, string lastName, Action address, Action emailAddress, Action phoneNo)
+        {
+            string Error = "";
+            if (lastName.Length == 0)
+            {
+                Error = Error + "The lastname may not be blank:";
+            }
+
+            if (lastName.Length > 6)
+            {
+                Error = Error + "The lastname may not be more than 50 characters:";
+            }
+            else if (lastName.Length < 1)
+            {
+                Error = Error + "The lastname may not be single alphabet:";
+            }
+            return Error;
+        }
+
+        internal string Valid(int customerID, Action firstName, Action lastName, Action address, Action emailAddress, string phoneNo)
+        {
+            String Error = "";
+            if (phoneNo.Length > 11)
+            {
+                Error = Error +  "PhoneNo must be 10 digit : ";
             }
             return Error;
         }

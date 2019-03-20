@@ -11,9 +11,10 @@ namespace MyTesting_Customer
         private string mFirstName = "John";
         private string mLastName = "Sab";
         private string mPhoneNo = "2233556688997";
-        
+
 
         public int CustomerID { get; private set; }
+        public string Error { get; private set; }
 
         [TestMethod]
         public void InstanceOK()
@@ -130,7 +131,7 @@ namespace MyTesting_Customer
                 OK = false;
             }
             Assert.IsTrue(OK);
-            
+
         }
 
         [TestMethod]
@@ -177,7 +178,7 @@ namespace MyTesting_Customer
                 OK = false;
             }
             Assert.IsTrue(OK);
-        } 
+        }
 
         [TestMethod]
         public void ValidMethodOK()
@@ -198,16 +199,301 @@ namespace MyTesting_Customer
             Assert.AreNotEqual(Error, "");
 
         }
+        [TestMethod]
+        public void AddressMinLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string Address = "adfadfa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
 
+        }
         [TestMethod]
         public void AddressMinPlusOne()
         {
             clsCustomer ACustomer = new clsCustomer();
-            Boolean OK = false;
-            string Address = "a";
-            OK = CustomerID.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
-            Assert.IsTrue(OK);
+            string Error = "";
+            string Address = "adfadfa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void AddressMaxPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string Address = "adfadfadfsdgs";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void AddressMaxLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string Address = "adfadfadfsdgs";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
 
+        [TestMethod]
+        public void AddressMax()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string Address = "aaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void EmailAddressMax()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string EmailAddress = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            EmailAddress = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void EmailAddressMaxPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string EmailAddress = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            EmailAddress = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void EmailAddressMaxLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string EmailAddress = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            EmailAddress = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void EmailAddressMin()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string EmailAddress = "aaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void EmailAddressMinPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string EmailAddress = "aaaaaaaaaa";            
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void EmailAddressMinLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string EmailAddress = "aaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void FirstNameMax()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string FirstName = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            FirstName = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void FirstNameMaxLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string FirstName = "abgskjfeiuf";
+            FirstName = "abgskjfeiuf";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void FirstNameMaxPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string FirstName = "abgskjfeiuf";
+            FirstName = "abgskjfeiuf";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void FirstNameMin()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string FirstName = "aaaaaaa";
+            FirstName = "abcdefg";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void FirstNameMinLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string FirstName = "";
+            FirstName = "abcdefg";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void FirstNameMinPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string FirstName = "";
+            FirstName = "abcdefg";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void LastNameMax()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string LastName = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            LastName = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void LastNameMaxLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string LastName = "aaaaaaaaa";
+            
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void LastNameMaxPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string LastName = "aaaaaaaaaaaaaaaaaaaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void LastNameMin()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string LastName = "aaaaaaa";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+        [TestMethod]
+        public void LastNameMinLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string LastName = "";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void LastNameMinPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string LastName = "";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+        }
+        [TestMethod]
+        public void PhoneNoMax()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string PhoneNo = "0123456789";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PhoneNoMaxLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string PhoneNo = "0";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void PhoneNoMaxPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string PhoneNo = "0123";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PhoneNoMin()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string PhoneNo = "0123456789";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PhoneNoMinLessOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string PhoneNo = "0123456";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void PhoneNoMinPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string PhoneNo = "0";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
         }
     }
 }
