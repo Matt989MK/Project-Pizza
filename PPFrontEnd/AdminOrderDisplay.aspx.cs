@@ -11,7 +11,16 @@ namespace PPFrontEnd
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            clsOrderCollection clsOrderConnection = new clsOrderCollection();
             //load all the records 
+       //finish this bit and add delete
+            clsOrderConnection.SelectAll();
+
+            foreach (var item in clsOrderConnection.OrderList)
+            {
+                tbDisplayRecords.Text += item.MobilePhone;
+            }
+         
         }
 
         protected void tbDisplayRecords_TextChanged(object sender, EventArgs e)

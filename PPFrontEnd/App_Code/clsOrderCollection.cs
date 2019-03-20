@@ -48,11 +48,19 @@ namespace PPFrontEnd
             NewOrder.AddParameter("@DeliveryPrice", mThisOrder.DeliveryPrice);
             //add the OrderDescription parameter
             NewOrder.AddParameter("@OrderDescription", mThisOrder.OrderDescription);
-
+           
             //execute the query to add the record - it will return the primary key value of the new record
             PrimaryKey = NewOrder.Execute("sproc_tblOrder_Insert");
             //return the primary key value of the new record
             return PrimaryKey;
+        }
+        public void SelectAll()
+        {
+            Int32 PrimaryKey;
+            //create a connection to the database
+            clsDataConnection Orders = new clsDataConnection();
+            PrimaryKey = Orders.Execute("sproc_tblOrder_Select");
+           
         }
         //function for the public Update method
         public void Update()
