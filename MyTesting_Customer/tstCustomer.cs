@@ -6,6 +6,15 @@ namespace MyTesting_Customer
     [TestClass]
     public class tstCustomer
     {
+        private string mAddress = "19 BulkStreet";
+        private string mEmailAddress = "johnsab@hotmail.com";
+        private string mFirstName = "John";
+        private string mLastName = "Sab";
+        private string mPhoneNo = "2233556688997";
+        
+
+        public int CustomerID { get; private set; }
+
         [TestMethod]
         public void InstanceOK()
         {
@@ -168,7 +177,37 @@ namespace MyTesting_Customer
                 OK = false;
             }
             Assert.IsTrue(OK);
+        } 
+
+        [TestMethod]
+        public void ValidMethodOK()
+        {
+            clsCustomer Acustomer = new clsCustomer();
+            string Error = "";
+            Error = Acustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreEqual(Error, "");
         }
 
+        [TestMethod]
+        public void AddressMin()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            string Error = "";
+            string Address = "";
+            Error = ACustomer.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.AreNotEqual(Error, "");
+
+        }
+
+        [TestMethod]
+        public void AddressMinPlusOne()
+        {
+            clsCustomer ACustomer = new clsCustomer();
+            Boolean OK = false;
+            string Address = "a";
+            OK = CustomerID.Valid(CustomerID, FirstName, LastName, Address, EmailAddress, PhoneNo);
+            Assert.IsTrue(OK);
+
+        }
     }
 }
