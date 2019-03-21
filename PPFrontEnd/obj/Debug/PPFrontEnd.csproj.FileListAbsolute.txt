@@ -347,3 +347,7 @@ C:\Users\P17191500\Github\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInpu
 C:\Users\P17191500\Github\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CopyComplete
 C:\Users\P17191500\Github\PPFrontEnd\obj\Debug\PPFrontEnd.dll
 C:\Users\P17191500\Github\PPFrontEnd\obj\Debug\PPFrontEnd.pdb
+C:\Users\P17191500\Git\PPFrontEnd\obj\Debug\PPFrontEnd.csprojAssemblyReference.cache
+C:\Users\P17191500\Git\PPFrontEnd\obj\Debug\PPFrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\P17191500\Git\PPFrontEnd\obj\Debug\PPFrontEnd.dll
+C:\Users\P17191500\Git\PPFrontEnd\obj\Debug\PPFrontEnd.pdb

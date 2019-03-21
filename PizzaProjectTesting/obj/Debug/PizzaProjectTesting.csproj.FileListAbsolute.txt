@@ -40,3 +40,7 @@ C:\Users\P17191500\Github\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.cspr
 C:\Users\P17191500\Github\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.csproj.CopyComplete
 C:\Users\P17191500\Github\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.dll
 C:\Users\P17191500\Github\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.pdb
+C:\Users\P17191500\Git\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.csprojAssemblyReference.cache
+C:\Users\P17191500\Git\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.csproj.CoreCompileInputs.cache
+C:\Users\P17191500\Git\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.dll
+C:\Users\P17191500\Git\PizzaProjectTesting\obj\Debug\PizzaProjectTesting.pdb

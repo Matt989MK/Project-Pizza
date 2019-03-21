@@ -24,3 +24,12 @@ C:\Users\P17191500\Github\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateRes
 C:\Users\P17191500\Github\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
 C:\Users\P17191500\Github\PPBackOffice\obj\Debug\PPBackOffice.exe
 C:\Users\P17191500\Github\PPBackOffice\obj\Debug\PPBackOffice.pdb
+C:\Users\P17191500\Git\PPBackOffice\bin\Debug\PPBackOffice.exe.config
+C:\Users\P17191500\Git\PPBackOffice\bin\Debug\PPBackOffice.exe
+C:\Users\P17191500\Git\PPBackOffice\bin\Debug\PPBackOffice.pdb
+C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.csprojAssemblyReference.cache
+C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.Properties.Resources.resources
+C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateResource.cache
+C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
+C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.exe
+C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.pdb

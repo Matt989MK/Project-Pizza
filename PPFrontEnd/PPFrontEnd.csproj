@@ -106,11 +106,6 @@
     <Compile Include="AdminOrderDisplay.aspx.designer.cs">
       <DependentUpon>AdminOrderDisplay.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\clsOrderCollection.cs" />
-    <Compile Include="App_Code\clsOrder.cs" />
-    <Compile Include="App_Code\clsDataConnection.cs" />
-    <Content Include="App_Code\clsStaff.cs" />
-    <Content Include="App_Code\clsStaffCollection.cs" />
     <Compile Include="Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,6 +188,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PizzaClassLibrary\PizzaClassLibrary.csproj">
+      <Project>{7072F3E9-3A9F-422F-909B-1E50022F4C31}</Project>
+      <Name>PizzaClassLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PizzaProjectTesting\PizzaProjectTesting.csproj">
       <Project>{37ef494a-b217-47ac-a6c7-6ed68cdef9c3}</Project>
       <Name>PizzaProjectTesting</Name>
