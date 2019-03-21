@@ -121,13 +121,9 @@ namespace PizzaProjectTesting
             if (Found == "0") { Found1 = true; }
             Assert.IsFalse(Found1);
         }
-        [TestMethod]
 
-        public void clsOrderCollectionUpdateOK()
-        {
 
-        }
-      
+   
        
 
         [TestMethod]
