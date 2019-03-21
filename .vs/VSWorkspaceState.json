@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Connect4\\ico",
+    "\\PPFrontEnd"
   ],
-  "SelectedNode": "\\PizzaProject.sln",
+  "SelectedNode": "\\PPFrontEnd\\App_Data",
   "PreviewInSolutionExplorer": false
 }
