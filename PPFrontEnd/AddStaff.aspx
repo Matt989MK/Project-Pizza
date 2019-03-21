@@ -35,6 +35,7 @@
     <br />
     <asp:Label ID="lblPhoneNo" runat="server" style="z-index: 1; left: 292px; top: 445px; position: absolute" Text="Phone Number:"></asp:Label>
     <asp:TextBox ID="txtPhoneNo" runat="server" style="z-index: 1; left: 143px; top: 363px; position: absolute; width: 268px"></asp:TextBox>
+    <asp:Label ID="lblError" runat="server" style="z-index: 1; left: 693px; top: 509px; position: absolute; width: 157px">Error</asp:Label>
     <br />
     <br />
     <br />
