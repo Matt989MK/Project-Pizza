@@ -21,7 +21,7 @@ namespace PPFrontEnd
 
         protected void btTryAgain_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Request.UrlReferrer.ToString());
+            Response.Redirect("Menu.aspx");
         }
     }
 }

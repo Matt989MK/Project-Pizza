@@ -15,7 +15,6 @@ namespace PPFrontEnd
         {
             //load all the records 
        //finish this bit and add delete
-         //lbOrderList.Text=   clsOrderConnection.SelectAll();
 
         
          
@@ -29,6 +28,8 @@ namespace PPFrontEnd
         protected void btGetRecords_Click(object sender, EventArgs e)
         {
             clsOrderCollection clsOrderConnection = new clsOrderCollection();
+            lbOrderList.Text = clsOrderConnection.SelectAll().ToString();
+
             List<clsOrder> orderList = new List<clsOrder>();
             orderList = clsOrderConnection.OrderList;
             foreach (var item in orderList)

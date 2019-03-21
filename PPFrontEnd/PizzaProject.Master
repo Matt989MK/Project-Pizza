@@ -20,12 +20,14 @@
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
                     <p style="height: 447px">
                         <br />
+                        
                     </p>
                 </asp:ContentPlaceHolder>
             </article>
  
             <nav>
-                
+                <asp:TextBox ID="tbIsAdmin" runat="server" style="z-index: 1; left: 35px; top: 250px; position: absolute" OnTextChanged="tbIsAdmin_TextChanged"></asp:TextBox>
+                        <asp:Button ID="btAdminOrderDisplay" runat="server" OnClick="btAdminOrderDisplay_Click" style="z-index: 1; left: 28px; top: 25px; position: absolute; height: 43px; width: 157px; " Text="AdminDisplayOrder" />                
                 <br />
                 <br />
                 <asp:Button ID="btnHomepage" runat="server" style="z-index: 1; left: 24px; top: 73px; position: absolute; width: 209px; height: 37px" Text="Homepage" OnClick="btnHomepage_Click" />
@@ -44,6 +46,8 @@
             </nav>
  
             <footer>
+                
+                
                 
             </footer>
              
