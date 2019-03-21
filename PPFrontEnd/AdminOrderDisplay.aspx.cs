@@ -33,8 +33,14 @@ namespace PPFrontEnd
             lbOrderList.DataSource = clsOrderConnection.OrderList;
             lbOrderList.DataValueField = "OrderId";
             lbOrderList.DataTextField = "CardNumber";
-
             lbOrderList.DataTextField = "CardSecurityCode";
+            lbOrderList.DataTextField = "CardExpiryNumber";
+            lbOrderList.DataTextField = "DeliveryAddress";
+            lbOrderList.DataTextField = "CustomerMobile";
+            lbOrderList.DataTextField = "Email";
+            lbOrderList.DataTextField = "Voucher";
+            lbOrderList.DataTextField = "OrderDescription";
+
 
             lbOrderList.DataBind();
 
