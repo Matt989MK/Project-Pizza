@@ -2,6 +2,7 @@
 using PizzaLibraryClass;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,14 +29,15 @@ namespace PPFrontEnd
         protected void btGetRecords_Click(object sender, EventArgs e)
         {
             clsOrderCollection clsOrderConnection = new clsOrderCollection();
-            lbOrderList.Text = clsOrderConnection.SelectAll().ToString();
 
-            List<clsOrder> orderList = new List<clsOrder>();
-            orderList = clsOrderConnection.OrderList;
-            foreach (var item in orderList)
-            {
-                lbOrderList.Text += item;
-            }
+            lbOrderList.DataSource = clsOrderConnection.OrderList;
+            lbOrderList.DataValueField = "OrderId";
+            lbOrderList.DataTextField = "CardNumber";
+
+            lbOrderList.DataTextField = "CardSecurityCode";
+
+            lbOrderList.DataBind();
+
         }
     }
 }

@@ -46,6 +46,7 @@ public class clsDataConnection
         connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"###\";Integrated Security=True;Connect Timeout=30";
         connectionString = connectionString.Replace("###", SomePath);
         return connectionString;
+        //"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\""c:\\users\\moffi\\desktop\\pizzafinal\\ppfrontend\\app_data\\Orders.mdf"\";Integrated Security=True;Connect Timeout=30"
     }
 
     public string GetDBName()
