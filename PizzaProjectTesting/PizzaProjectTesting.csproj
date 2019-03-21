@@ -52,9 +52,17 @@
   <ItemGroup>
     <Compile Include="tstOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tstStaff.cs" />
+    <Compile Include="tstStaffCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaClassLibrary\PizzaClassLibrary.csproj">
+      <Project>{7072F3E9-3A9F-422F-909B-1E50022F4C31}</Project>
+      <Name>PizzaClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
