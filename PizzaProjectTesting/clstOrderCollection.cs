@@ -10,6 +10,15 @@ namespace PizzaProjectTesting
     {
         List<clsOrder> mOrderList = new List<clsOrder>();
         clsOrder mThisOrder = new clsOrder();
+        internal string FindID(Int32 iD) // cant be letters
+        {
+            if (iD != null)
+            {
+                return "";
+            }
+            else
+                return "ID cannot be blank";
+        }
         public clsOrder ThisOrder
         {
             get
@@ -26,13 +35,15 @@ namespace PizzaProjectTesting
        
         internal int Add()
         {
-            mThisOrder.OrderNo = 2;
+            mThisOrder.OrderNo = 0;
             return mThisOrder.OrderNo;
         }
 
         internal int Delete()
         {
-            throw new NotImplementedException();
+
+            mThisOrder.OrderNo = 1;
+            return mThisOrder.OrderNo;
         }
     }
 }

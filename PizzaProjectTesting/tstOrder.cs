@@ -80,7 +80,7 @@ namespace PizzaProjectTesting
             clsOrder testItem = new clsOrder();
             clstOrderCollection clstOrderCollection = new clstOrderCollection();
             Int32 PrimaryKey = 0;
-            testItem.OrderNo = 1;
+            testItem.OrderNo = 0;
             testItem.CardNumber = "1234567891234567";
             testItem.CardExpiryNumber = new DateTime(10 / 12 / 2010); ;
             testItem.CardSecurityCode ="123456";
@@ -92,12 +92,13 @@ namespace PizzaProjectTesting
             testItem.Voucher ="voucher";
             clstOrderCollection.OrderNo = PrimaryKey;
             PrimaryKey = clstOrderCollection.Add();
-           // clstOrderCollection.OrderNo.Find(PrimaryKey);
-            Assert.AreEqual(clstOrderCollection.OrderNo,testItem);
+            clstOrderCollection.FindID(PrimaryKey);
+            Assert.AreEqual(clstOrderCollection.OrderNo,testItem.OrderNo);
         }
         [TestMethod]
         public void clsOrderCollectionDeleteOK()
         {
+            var Found1 = false;
             clsOrder testItem = new clsOrder();
             clstOrderCollection clstOrderCollection = new clstOrderCollection();
             Int32 PrimaryKey = 0;
@@ -114,10 +115,11 @@ namespace PizzaProjectTesting
             clstOrderCollection.OrderNo = PrimaryKey;
             PrimaryKey = clstOrderCollection.Delete();
             testItem.OrderNo = PrimaryKey;
-         //   clstOrderCollection.OrderNo.Find(PrimaryKey);
+           clstOrderCollection.FindID(PrimaryKey);
             clstOrderCollection.Delete();
-           // Boolean Found = clstOrderCollection.OrderNo.Find(PrimaryKey);
-           // Assert.IsFalse(Found);
+           string Found = clstOrderCollection.FindID(PrimaryKey);
+            if (Found == "0") { Found1 = true; }
+            Assert.IsFalse(Found1);
         }
         [TestMethod]
 
@@ -126,11 +128,7 @@ namespace PizzaProjectTesting
 
         }
       
-        [TestMethod]
-        public void clsOrderCollectionFilterByOrderIdOK(string OrderId) // its supposed to be find
-        {
-
-        }
+       
 
         [TestMethod]
         public void InstanceOK()
