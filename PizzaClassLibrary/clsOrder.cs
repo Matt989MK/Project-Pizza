@@ -153,9 +153,9 @@ namespace PizzaClassLibrary
             }
         }
 
-        public string CustomerId { get; internal set; }
+        public string CustomerId { get;  set; }
 
-        internal string FindID(string iD) // cant be letters
+        public string FindID(string iD) // cant be letters
         {
             if (iD != "")
             {
@@ -164,7 +164,7 @@ namespace PizzaClassLibrary
             else
                 return "ID cannot be blank";
         }
-        internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime, string customerId, int price, string voucher)
+        public string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime, string customerId, int price, string voucher)
         {
             if (cardNumber.Length != 16) // cant be letters
             {

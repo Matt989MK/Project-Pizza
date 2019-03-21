@@ -56,13 +56,13 @@ namespace PizzaLibraryClass
             //return the primary key value of the new record
             return PrimaryKey;
         }
-        public void SelectAll()
+        public Int32 SelectAll()
         {
             Int32 PrimaryKey;
             //create a connection to the database
             clsDataConnection Orders = new clsDataConnection();
             PrimaryKey = Orders.Execute("sproc_tblOrder_Select");
-
+            return PrimaryKey;
         }
         //function for the public Update method
         public void Update()
@@ -117,6 +117,15 @@ namespace PizzaLibraryClass
             //execute the stored procedure to delete the address
             dBConnection.Execute("sproc_tblOrder_FilterByOrderId");
         }
+        //public void DisplayAll()
+        /////it accepts a single parameter PostCode and returns no value
+        //{
+        //    //initialise the DBConnection
+        //    clsDataConnection dBConnection = new clsDataConnection();
+            
+        //    //execute the stored procedure to delete the address
+        //    dBConnection.Execute("sproc_tblOrder_Select");
+        //}
         ///this function defines the public property Count
         public Int32 Count
         ///it returns the count of records currently in QueryResults
@@ -135,6 +144,7 @@ namespace PizzaLibraryClass
             get
             {
                 clsDataConnection dBConnection = new clsDataConnection();
+                dbConnection.Execute("sproc_tblOrder_Select");
                 List<clsOrder> mOrderList = new List<clsOrder>();
                 Int32 Index = 0;
                 while (Index < dBConnection.Count)
@@ -162,7 +172,7 @@ namespace PizzaLibraryClass
                     NewOrder.OrderDescription = Convert.ToString(dBConnection.DataTable.Rows[Index]["OrderDescription"]);
                     //increment the index
                     Index++;
-                    //add the address to the list
+                    //add the order to the list
                     mOrderList.Add(NewOrder);
                 }
                 //return the list of addresses

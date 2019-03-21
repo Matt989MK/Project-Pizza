@@ -33,3 +33,12 @@ C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateResour
 C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
 C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.exe
 C:\Users\P17191500\Git\PPBackOffice\obj\Debug\PPBackOffice.pdb
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\bin\Debug\PPBackOffice.exe.config
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\bin\Debug\PPBackOffice.exe
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\bin\Debug\PPBackOffice.pdb
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\obj\Debug\PPBackOffice.csprojAssemblyReference.cache
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\obj\Debug\PPBackOffice.Properties.Resources.resources
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\obj\Debug\PPBackOffice.csproj.GenerateResource.cache
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\obj\Debug\PPBackOffice.csproj.CoreCompileInputs.cache
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\obj\Debug\PPBackOffice.exe
+C:\Users\moffi\Desktop\PizzaFinal\PPBackOffice\obj\Debug\PPBackOffice.pdb

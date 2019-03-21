@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PizzaLibraryClass;
 using PizzaProjectTesting;
 namespace PPFrontEnd
 {
@@ -56,12 +57,13 @@ namespace PPFrontEnd
         protected void btOrder_Click(object sender, EventArgs e)
         {
             //var to store any error messages
-            string ErrorMsg="";
+            string ErrorMsg="s";
             //create an instance of the address class
                 clsOrderCollection OrderCollection = new clsOrderCollection();
 
             //use the objects validation method to test the data
-            ErrorMsg = "a"; // fix it to pizza testing
+           
+           // ErrorMsg = OrderCollection.ThisOrder.Valid(tbCardNumber.Text,tbCardSecurityCode.Text,Convert.ToDateTime(tbCardExpiryDate),tbPhoneNumber.Text,tbAddress.Text,Convert.ToInt32(lbDeliveryTime.Text),"1",Convert.ToInt32(lbOrderPriceDisplay.Text),tbVoucherCode.Text);
             //ErrorMsg = AddressBook.ThisAddress.Valid(txtHouseNo.Text, txtStreet.Text, txtTown.Text, txtPostCode.Text, txtDateAdded.Text);
             //if there is no error message
             if (ErrorMsg == "")

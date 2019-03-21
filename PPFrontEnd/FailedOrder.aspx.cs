@@ -13,5 +13,15 @@ namespace PPFrontEnd
         {
 
         }
+
+        protected void btHomepage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Homepage.aspx");
+        }
+
+        protected void btTryAgain_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Request.UrlReferrer.ToString());
+        }
     }
 }

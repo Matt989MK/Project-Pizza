@@ -1,4 +1,5 @@
-﻿using PizzaLibraryClass;
+﻿using PizzaClassLibrary;
+using PizzaLibraryClass;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,21 +13,28 @@ namespace PPFrontEnd
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            clsOrderCollection clsOrderConnection = new clsOrderCollection();
             //load all the records 
        //finish this bit and add delete
-            clsOrderConnection.SelectAll();
+         //lbOrderList.Text=   clsOrderConnection.SelectAll();
 
-            foreach (var item in clsOrderConnection.OrderList)
-            {
-                lbOrderList.Text += item.CustomerMobile;
-            }
+        
          
         }
 
         protected void tbDisplayRecords_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btGetRecords_Click(object sender, EventArgs e)
+        {
+            clsOrderCollection clsOrderConnection = new clsOrderCollection();
+            List<clsOrder> orderList = new List<clsOrder>();
+            orderList = clsOrderConnection.OrderList;
+            foreach (var item in orderList)
+            {
+                lbOrderList.Text += item;
+            }
         }
     }
 }

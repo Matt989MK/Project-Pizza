@@ -13,5 +13,10 @@ namespace PPFrontEnd
         {
 
         }
+
+        protected void btHomepage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Homepage.aspx");
+        }
     }
 }
