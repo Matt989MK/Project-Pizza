@@ -17,7 +17,62 @@ namespace PizzaProjectTesting
         int price = 200;
         string voucher = "voucher";
 
-
+        [TestMethod]
+        public void cardNumberOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            string cardNumber = "1234567812345678";
+            clsOrder.CardNumber = cardNumber;
+            Assert.AreEqual(clsOrder.CardNumber,cardNumber);
+        }
+        [TestMethod]
+        public void cardExpiryDateOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            DateTime cardExpiryNumber = new DateTime(10/10/2010);
+            clsOrder.CardExpiryNumber = cardExpiryNumber;
+            Assert.AreEqual(clsOrder.CardExpiryNumber, cardExpiryNumber);
+        }
+        [TestMethod]
+        public void cardSecurityCodeOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            string cardSecurityCode = "123456";
+            clsOrder.CardSecurityCode = cardSecurityCode;
+            Assert.AreEqual(clsOrder.CardSecurityCode, cardSecurityCode);
+        }
+        [TestMethod]
+        public void AddressOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            string address = "abc street";
+            clsOrder.DeliveryAddress = address;
+            Assert.AreEqual(clsOrder.DeliveryAddress, address);
+        }
+        [TestMethod]
+        public void EmailOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            string email = "abc@gmail.com";
+            clsOrder.Email = email;
+            Assert.AreEqual(clsOrder.Email, email);
+        }
+        [TestMethod]
+        public void PhoneNumberOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            string phoneNumber = "12345678912";
+            clsOrder.CustomerMobile = phoneNumber;
+            Assert.AreEqual(clsOrder.CustomerMobile, phoneNumber);
+        }
+        [TestMethod]
+        public void VoucherOK()
+        {
+            clsOrder clsOrder = new clsOrder();
+            string voucher = "12345678912";
+            clsOrder.Voucher = voucher;
+            Assert.AreEqual(clsOrder.Voucher, voucher);
+        }
         [TestMethod]
         public void clsOrderCollectionAddOK()
         {

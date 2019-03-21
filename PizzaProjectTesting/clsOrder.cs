@@ -8,6 +8,7 @@ namespace PizzaProjectTesting
         public DateTime CardExpiryNumber { get; internal set; }
         public string CardNumber { get; internal set; }
         public string CardSecurityCode { get; internal set; }
+        public string Email { get; internal set; }
         public string CustomerMobile { get; internal set; }
         public string DeliveryAddress { get; internal set; }
         public int DeliveryTime { get; internal set; }
