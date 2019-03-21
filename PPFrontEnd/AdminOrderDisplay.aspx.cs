@@ -18,7 +18,7 @@ namespace PPFrontEnd
 
             foreach (var item in clsOrderConnection.OrderList)
             {
-                lbOrderList.Text += item.MobilePhone;
+                lbOrderList.Text += item.CustomerMobile;
             }
          
         }

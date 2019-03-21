@@ -34,7 +34,7 @@
                 <asp:Button ID="btnStaff" runat="server" style="z-index: 1; left: 24px; top: 134px; position: absolute; width: 209px; height: 37px" Text="Staff" OnClick="btnStaff_Click1" />
                 <br />
                 <br />
-                <asp:Button ID="btnOrder" runat="server" style="z-index: 1; left: 26px; top: 208px; position: absolute; width: 204px; height: 37px; margin-top: 0px" Text="Order" />
+                <asp:Button ID="btnOrder" runat="server" style="z-index: 1; left: 26px; top: 208px; position: absolute; width: 204px; height: 37px; margin-top: 0px" Text="Order" OnClick="btnOrder_Click" />
                 <br />
                 <br />
                 <asp:Button ID="btnCustomer" runat="server" style="z-index: 1; left: 31px; top: 289px; position: absolute; width: 199px; height: 37px;" Text="Customer" />

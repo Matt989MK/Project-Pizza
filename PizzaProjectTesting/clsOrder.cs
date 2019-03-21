@@ -2,19 +2,154 @@
 
 namespace PizzaProjectTesting
 {
-    class clsOrder
+    public class clsOrder
     {
-        public int OrderNo { get; internal set; }
-        public DateTime CardExpiryNumber { get; internal set; }
-        public string CardNumber { get; internal set; }
-        public string CardSecurityCode { get; internal set; }
-        public string Email { get; internal set; }
-        public string CustomerMobile { get; internal set; }
-        public string DeliveryAddress { get; internal set; }
-        public int DeliveryTime { get; internal set; }
+        private string mCardNumber;
+        public string CardNumber
+        {
+            get
+            {
+                return mCardNumber;
+            }
+            set
+            {
+                mCardNumber = value;
+            }
+        }
+        private string mEmail;
+        public string Email
+        {
+            get
+            {
+                return mEmail;
+            }
+            set
+            {
+                mEmail = value;
+            }
+        }
+        private int mOrderNo;
+        public int OrderId
+        {
+            get
+            {
+                return mOrderNo;
+            }
+            set
+            {
+                mOrderNo = value;
+            }
+        }
+        private string mCardSecurityCode;
+        public string CardSecurityCode
+        {
+            get
+            {
+                return mCardSecurityCode;
+            }
+            set
+            {
+                mCardSecurityCode = value;
+            }
+        }
+        private DateTime mCardExpiryNumber;
+        public DateTime CardExpiryNumber
+        {
+            get
+            {
+                return mCardExpiryNumber;
+            }
+            set
+            {
+                mCardExpiryNumber = value;
+            }
+        }
+        private string mDeliveryAddress;
+        public string DeliveryAddress
+        {
+            get
+            {
+                return mDeliveryAddress;
+            }
+            set
+            {
+                mDeliveryAddress = value;
+            }
+        }
+        private string mCustomerMobile;
+        public string CustomerMobile
+        {
+            get
+            {
+                return mCustomerMobile;
+            }
+            set
+            {
+                mCustomerMobile = value;
+            }
+        }
+        private string mVoucher;
+        public string Voucher
+        {
+            get
+            {
+                return mVoucher;
+            }
+            set
+            {
+                mVoucher = value;
+            }
+        }
+        private string mDeliveryTime;
+        public string DeliveryTime
+        {
+            get
+            {
+                return mDeliveryTime;
+            }
+            set
+            {
+                mDeliveryTime = value;
+            }
+        }
+        private int mDeliveryPrice;
+        public int DeliveryPrice
+        {
+            get
+            {
+                return mDeliveryPrice;
+            }
+            set
+            {
+                mDeliveryPrice = value;
+            }
+        }
+        private string mOrderDescription;
+        public string OrderDescription
+        {
+            get
+            {
+                return mOrderDescription;
+            }
+            set
+            {
+                mOrderDescription = value;
+            }
+        }
+        private int mPrice;
+        public int Price
+        {
+            get
+            {
+                return mPrice;
+            }
+            set
+            {
+                mPrice = value;
+            }
+        }
+
         public string CustomerId { get; internal set; }
-        public int Price { get; internal set; }
-        public string Voucher { get; internal set; }
 
         internal string FindID(string iD) // cant be letters
         {
@@ -25,41 +160,26 @@ namespace PizzaProjectTesting
             else
                 return "ID cannot be blank";
         }
-
-        internal string VoucherDiscount(string voucher)
-        {
-            if (voucher.Length >15 || voucher.Length<1)
-            {
-                return "invalid Length";
-            }
-            else
-                return "";
-        }
-       
-        internal string clsOrderCollectionOrderList()
-        {
-            return "";
-        }
-        internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime,string customerId, int price, string voucher)
+        internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime, string customerId, int price, string voucher)
         {
             if (cardNumber.Length != 16) // cant be letters
             {
                 return "card number invalid";
             }
-            
+
             if (cardSecurityCode.Length != 6) // fix cant be letters
             {
                 return "card security code invalid";
             }
-            if (cardExpiryDate==null) // cant be 
+            if (cardExpiryDate == null) // cant be 
             {
                 return "card expiry date cannot be blank";
             }
-            if (customerMobile.Length!=11) // cant be 
+            if (customerMobile.Length != 11) // cant be 
             {
                 return "wrong mobile number";
             }
-            if (deliveryAddress.Length>50||deliveryAddress.Length<5) // cant be 
+            if (deliveryAddress.Length > 50 || deliveryAddress.Length < 5) // cant be 
             {
                 return "address cannot be empty";
             }
@@ -71,9 +191,10 @@ namespace PizzaProjectTesting
             {
                 return "customer id is null";
             }
-            if(price <10 || price > 500) { return "price is incorrect"; }
+            if (price < 10 || price > 500) { return "price is incorrect"; }
             if (voucher.Length < 5 || voucher.Length > 20) { return "voucher is incorrect"; }
             else return "";
         }
+
     }
 }

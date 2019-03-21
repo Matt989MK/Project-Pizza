@@ -23,5 +23,12 @@ namespace PPFrontEnd
         {
             Response.Redirect("Homepage.aspx");
         }
+
+        protected void btnOrder_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Menu.aspx");
+
+        }
+
     }
 }

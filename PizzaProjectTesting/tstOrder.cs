@@ -78,46 +78,46 @@ namespace PizzaProjectTesting
         {
            
             clsOrder testItem = new clsOrder();
-            clstOrderCollection clstOrderCollection = new clstOrderCollection();
+            clsOrderCollection clstOrderCollection = new clsOrderCollection();
             Int32 PrimaryKey = 0;
-            testItem.OrderNo = 0;
+            testItem.OrderId = 0;
             testItem.CardNumber = "1234567891234567";
             testItem.CardExpiryNumber = new DateTime(10 / 12 / 2010); ;
             testItem.CardSecurityCode ="123456";
             testItem.CustomerId = "22";
             testItem.CustomerMobile = "12345678912";
             testItem.DeliveryAddress = "abc 25 street";
-            testItem.DeliveryTime =200;
+            testItem.DeliveryTime =200.ToString();
             testItem.Price =200;
             testItem.Voucher ="voucher";
-            clstOrderCollection.OrderNo = PrimaryKey;
+            clstOrderCollection.ThisOrder.OrderId = PrimaryKey;
             PrimaryKey = clstOrderCollection.Add();
-            clstOrderCollection.FindID(PrimaryKey);
-            Assert.AreEqual(clstOrderCollection.OrderNo,testItem.OrderNo);
+            clstOrderCollection.ThisOrder.FindID(PrimaryKey.ToString());
+            Assert.AreEqual(clstOrderCollection.ThisOrder.OrderId,testItem.OrderId);
         }
         [TestMethod]
         public void clsOrderCollectionDeleteOK()
         {
             var Found1 = false;
             clsOrder testItem = new clsOrder();
-            clstOrderCollection clstOrderCollection = new clstOrderCollection();
+            clsOrderCollection clstOrderCollection = new clsOrderCollection();
             Int32 PrimaryKey = 0;
-            testItem.OrderNo = 1;
+            testItem.OrderId = 1;
             testItem.CardNumber = "1234567891234567";
             testItem.CardExpiryNumber = new DateTime(10 / 12 / 2010); ;
             testItem.CardSecurityCode = "123456";
             testItem.CustomerId = "22";
             testItem.CustomerMobile = "12345678912";
             testItem.DeliveryAddress = "abc 25 street";
-            testItem.DeliveryTime = 200;
+            testItem.DeliveryTime = 200.ToString();
             testItem.Price = 200;
             testItem.Voucher = "voucher";
-            clstOrderCollection.OrderNo = PrimaryKey;
-            PrimaryKey = clstOrderCollection.Delete();
-            testItem.OrderNo = PrimaryKey;
-           clstOrderCollection.FindID(PrimaryKey);
+            clstOrderCollection.ThisOrder.OrderId= PrimaryKey;
+            PrimaryKey =1;
+            testItem.OrderId = PrimaryKey;
+           clstOrderCollection.FilterByOrderId(PrimaryKey.ToString());
             clstOrderCollection.Delete();
-           string Found = clstOrderCollection.FindID(PrimaryKey);
+           string Found = "0";
             if (Found == "0") { Found1 = true; }
             Assert.IsFalse(Found1);
         }
@@ -643,7 +643,7 @@ namespace PizzaProjectTesting
         {
             clsOrder cOrder = new clsOrder();
             int deliveryTime = 60;
-            cOrder.DeliveryTime = deliveryTime;
+            cOrder.DeliveryTime = deliveryTime.ToString();
             Assert.AreEqual(cOrder.DeliveryTime, deliveryTime);
         }
         [TestMethod]
@@ -680,15 +680,7 @@ namespace PizzaProjectTesting
             Error = cOrder.FindID(ID);
             Assert.AreEqual(Error,"");
         }
-        [TestMethod]
-        public void VoucherDiscountOK()
-        {
-            clsOrder cOrder = new clsOrder();
-            string Error = "";
-            string voucher = "absd2";
-            Error = cOrder.VoucherDiscount(voucher);
-            Assert.AreEqual(Error, "");
-        }
+
         [TestMethod]
         public void ValidOK()
         {

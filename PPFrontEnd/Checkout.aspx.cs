@@ -36,6 +36,11 @@ namespace PPFrontEnd
         protected void btApplyVoucher_Click(object sender, EventArgs e)
         {
             // validate voucher and apply it
+            if (lbVoucherCode.Text == "voucher")
+            {
+                OrderPrice -= 5;
+                lbOrderPriceDisplay.Text = OrderPrice.ToString();
+            }
         }
 
         protected void btAddToOrder_Click(object sender, EventArgs e)
@@ -64,10 +69,10 @@ namespace PPFrontEnd
                 /*TEST ID*/
               //  OrderCollection.ThisOrder.OrderId = 1;
                     OrderCollection.ThisOrder.CardNumber = tbCardNumber.Text;
-                    OrderCollection.ThisOrder.CardExpiryDate = Convert.ToDateTime(tbCardExpiryDate.Text);
-                    OrderCollection.ThisOrder.CardSecurityNumber = tbCardSecurityCode.Text;
-                    OrderCollection.ThisOrder.MobilePhone = tbPhoneNumber.Text;
-                    OrderCollection.ThisOrder.CustomerAddress = tbAddress.Text;
+                    OrderCollection.ThisOrder.CardExpiryNumber = Convert.ToDateTime(tbCardExpiryDate.Text);
+                    OrderCollection.ThisOrder.CardSecurityCode = tbCardSecurityCode.Text;
+                    OrderCollection.ThisOrder.CustomerMobile = tbPhoneNumber.Text;
+                    OrderCollection.ThisOrder.DeliveryAddress = tbAddress.Text;
                     OrderCollection.ThisOrder.Voucher = tbVoucherCode.Text;
                     OrderCollection.ThisOrder.Email = tbEmail.Text;
                     OrderCollection.ThisOrder.DeliveryPrice = Convert.ToInt32(lbOrderPriceDisplay.Text);
@@ -98,6 +103,11 @@ namespace PPFrontEnd
         }
 
         protected void tbAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void tbVoucherCode_TextChanged(object sender, EventArgs e)
         {
 
         }

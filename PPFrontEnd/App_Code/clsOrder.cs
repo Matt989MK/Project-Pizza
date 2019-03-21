@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-namespace PPFrontEnd
+
+namespace PizzaProjectTesting
 {
     public class clsOrder
     {
         private string mCardNumber;
-
         public string CardNumber
         {
             get
@@ -20,15 +17,17 @@ namespace PPFrontEnd
             }
         }
         private string mEmail;
-        public string Email {
+        public string Email
+        {
             get
             {
                 return mEmail;
             }
-            set {
-                mEmail=value;
+            set
+            {
+                mEmail = value;
             }
-            }
+        }
         private int mOrderNo;
         public int OrderId
         {
@@ -41,53 +40,52 @@ namespace PPFrontEnd
                 mOrderNo = value;
             }
         }
-        private string mCardSecurityNumber;
-
-        public string CardSecurityNumber
+        private string mCardSecurityCode;
+        public string CardSecurityCode
         {
             get
             {
-                return mCardSecurityNumber;
+                return mCardSecurityCode;
             }
             set
             {
-                mCardSecurityNumber = value;
+                mCardSecurityCode = value;
             }
         }
-        private DateTime mCardExpiryDate;
-        public DateTime CardExpiryDate
+        private DateTime mCardExpiryNumber;
+        public DateTime CardExpiryNumber
         {
             get
             {
-                return mCardExpiryDate;
+                return mCardExpiryNumber;
             }
             set
             {
-                mCardExpiryDate = value;
+                mCardExpiryNumber = value;
             }
         }
-        private string mCustomerAddress;
-        public string CustomerAddress
+        private string mDeliveryAddress;
+        public string DeliveryAddress
         {
             get
             {
-                return mCustomerAddress;
+                return mDeliveryAddress;
             }
             set
             {
-                mCustomerAddress = value;
+                mDeliveryAddress = value;
             }
         }
-        private string mMobilePhone;
-        public string MobilePhone
+        private string mCustomerMobile;
+        public string CustomerMobile
         {
             get
             {
-                return mMobilePhone;
+                return mCustomerMobile;
             }
             set
             {
-                mMobilePhone = value;
+                mCustomerMobile = value;
             }
         }
         private string mVoucher;
@@ -138,5 +136,65 @@ namespace PPFrontEnd
                 mOrderDescription = value;
             }
         }
+        private int mPrice;
+        public int Price
+        {
+            get
+            {
+                return mPrice;
+            }
+            set
+            {
+                mPrice = value;
+            }
+        }
+
+        public string CustomerId { get; internal set; }
+
+        internal string FindID(string iD) // cant be letters
+        {
+            if (iD != "")
+            {
+                return "";
+            }
+            else
+                return "ID cannot be blank";
+        }
+        internal string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime, string customerId, int price, string voucher)
+        {
+            if (cardNumber.Length != 16) // cant be letters
+            {
+                return "card number invalid";
+            }
+
+            if (cardSecurityCode.Length != 6) // fix cant be letters
+            {
+                return "card security code invalid";
+            }
+            if (cardExpiryDate == null) // cant be 
+            {
+                return "card expiry date cannot be blank";
+            }
+            if (customerMobile.Length != 11) // cant be 
+            {
+                return "wrong mobile number";
+            }
+            if (deliveryAddress.Length > 50 || deliveryAddress.Length < 5) // cant be 
+            {
+                return "address cannot be empty";
+            }
+            if (deliveryTime < 10 || deliveryTime > 200)
+            {
+                return "delivery time impossible";
+            }
+            if (customerId == null)
+            {
+                return "customer id is null";
+            }
+            if (price < 10 || price > 500) { return "price is incorrect"; }
+            if (voucher.Length < 5 || voucher.Length > 20) { return "voucher is incorrect"; }
+            else return "";
+        }
+
     }
 }

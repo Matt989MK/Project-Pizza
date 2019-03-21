@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace PPFrontEnd
+namespace PizzaProjectTesting
 {
-     internal class  clsOrderCollection
+    internal class clsOrderCollection
     {
-        private clsDataConnection dbConnection=new clsDataConnection();
-        private  clsOrder mThisOrder = new clsOrder();
+        private clsDataConnection dbConnection = new clsDataConnection();
+        private clsOrder mThisOrder = new clsOrder();
 
         public clsOrder ThisOrder
         {
@@ -21,23 +22,23 @@ namespace PPFrontEnd
                 mThisOrder = value;
             }
         }
-  
+
         public Int32 Add()
         {
             Int32 PrimaryKey;
             //create a connection to the database
             clsDataConnection NewOrder = new clsDataConnection();
-           // NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
+            // NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
             //add the CardNumber parameter
             NewOrder.AddParameter("@CardNumber", mThisOrder.CardNumber);
             //add the CardSecurityNumber parameter
-            NewOrder.AddParameter("@CardSecurityNumber", mThisOrder.CardSecurityNumber);
+            NewOrder.AddParameter("@CardSecurityNumber", mThisOrder.CardSecurityCode);
             //add the CardExpiryDate parameter
-            NewOrder.AddParameter("@CardExpiryDate", mThisOrder.CardExpiryDate);
+            NewOrder.AddParameter("@CardExpiryDate", mThisOrder.CardExpiryNumber);
             //add the CustomerAddress parameter
-            NewOrder.AddParameter("@CustomerAddress", mThisOrder.CustomerAddress);
+            NewOrder.AddParameter("@CustomerAddress", mThisOrder.DeliveryAddress);
             //add the MobilePhone parameter
-            NewOrder.AddParameter("@MobilePhone", mThisOrder.MobilePhone);
+            NewOrder.AddParameter("@MobilePhone", mThisOrder.CustomerMobile);
             //add the email parameter
             NewOrder.AddParameter("@Email", mThisOrder.Email);
             //add the Voucher parameter
@@ -48,7 +49,7 @@ namespace PPFrontEnd
             NewOrder.AddParameter("@DeliveryPrice", mThisOrder.DeliveryPrice);
             //add the OrderDescription parameter
             NewOrder.AddParameter("@OrderDescription", mThisOrder.OrderDescription);
-           
+
             //execute the query to add the record - it will return the primary key value of the new record
             PrimaryKey = NewOrder.Execute("sproc_tblOrder_Insert");
             //return the primary key value of the new record
@@ -60,7 +61,7 @@ namespace PPFrontEnd
             //create a connection to the database
             clsDataConnection Orders = new clsDataConnection();
             PrimaryKey = Orders.Execute("sproc_tblOrder_Select");
-           
+
         }
         //function for the public Update method
         public void Update()
@@ -74,13 +75,13 @@ namespace PPFrontEnd
             //add the CardNumber parameter
             NewOrder.AddParameter("@CardNumber", mThisOrder.CardNumber);
             //add the CardSecurityNumber parameter
-            NewOrder.AddParameter("@CardSecurityNumber", mThisOrder.CardSecurityNumber);
+            NewOrder.AddParameter("@CardSecurityNumber", mThisOrder.CardSecurityCode);
             //add the CardExpiryDate parameter
-            NewOrder.AddParameter("@CardExpiryDate", mThisOrder.CardExpiryDate);
+            NewOrder.AddParameter("@CardExpiryDate", mThisOrder.CardExpiryNumber);
             //add the CustomerAddress parameter
-            NewOrder.AddParameter("@CustomerAddress", mThisOrder.CustomerAddress);
+            NewOrder.AddParameter("@CustomerAddress", mThisOrder.DeliveryAddress);
             //add the MobilePhone parameter
-            NewOrder.AddParameter("@MobilePhone", mThisOrder.MobilePhone);
+            NewOrder.AddParameter("@MobilePhone", mThisOrder.CustomerMobile);
             //add the email parameter
             NewOrder.AddParameter("@Email", mThisOrder.Email);
             //add the Voucher parameter
@@ -141,15 +142,15 @@ namespace PPFrontEnd
                     //get the house no from the query results
                     NewOrder.CardNumber = Convert.ToString(dBConnection.DataTable.Rows[Index]["CardNumber"]);
                     //get the street from the query results
-                    NewOrder.CardSecurityNumber = Convert.ToString(dBConnection.DataTable.Rows[Index]["CardSecurityNumber"]);
+                    NewOrder.CardSecurityCode = Convert.ToString(dBConnection.DataTable.Rows[Index]["CardSecurityNumber"]);
                     //get the post code from the query results
-                    NewOrder.CardExpiryDate = Convert.ToDateTime(dBConnection.DataTable.Rows[Index]["CardExpiryDate"]);
+                    NewOrder.CardExpiryNumber = Convert.ToDateTime(dBConnection.DataTable.Rows[Index]["CardExpiryDate"]);
                     //get the address no from the query results
-                    NewOrder.CustomerAddress = Convert.ToString(dBConnection.DataTable.Rows[Index]["CustomerAddress"]);
+                    NewOrder.DeliveryAddress = Convert.ToString(dBConnection.DataTable.Rows[Index]["CustomerAddress"]);
                     //get the address no from the query results
-                    NewOrder.MobilePhone = Convert.ToString(dBConnection.DataTable.Rows[Index]["MobilePhone"]);
+                    NewOrder.CustomerMobile = Convert.ToString(dBConnection.DataTable.Rows[Index]["MobilePhone"]);
                     //get the address no from the query results
-                    NewOrder.MobilePhone = Convert.ToString(dBConnection.DataTable.Rows[Index]["Email"]);
+                    NewOrder.CustomerMobile = Convert.ToString(dBConnection.DataTable.Rows[Index]["Email"]);
                     //get the address no from the query results
                     NewOrder.Voucher = Convert.ToString(dBConnection.DataTable.Rows[Index]["Voucher"]);
                     //get the address no from the query results
