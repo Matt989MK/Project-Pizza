@@ -14,7 +14,7 @@ namespace PizzaProjectTesting
     public class tstclsOrderCollection
     {
         string cardNumber = "1234567891234567";
-        DateTime cardExpiryDate = new DateTime(10 / 12 / 2010);
+        DateTime cardExpiryDate = DateTime.Today;
         string cardSecurityCode = "123456";
         string customerMobile = "12345678912";
         string deliveryAddress = "abc 25 street";
@@ -25,28 +25,29 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void clsOrderCollectionDeleteOK()
         {
-            var Found1 = false;
+            
             clsOrder testItem = new clsOrder();
             clsOrderCollection clstOrderCollection = new clsOrderCollection();
             Int32 PrimaryKey = 0;
-            testItem.OrderId = 1;
+            testItem.OrderId = 5;
             testItem.CardNumber = "1234567891234567";
-            testItem.CardExpiryNumber = new DateTime(10 / 12 / 2010); ;
+            testItem.CardExpiryNumber = DateTime.Today;
             testItem.CardSecurityCode = "123456";
             testItem.CustomerId = "22";
             testItem.CustomerMobile = "12345678912";
             testItem.DeliveryAddress = "abc 25 street";
+            testItem.Email = "abc@gmail.com";
             testItem.DeliveryTime = 200.ToString();
             testItem.Price = 200;
             testItem.Voucher = "voucher";
-            clstOrderCollection.ThisOrder.OrderId = PrimaryKey;
-            PrimaryKey = 1;
+            testItem.OrderDescription = "Pizza 1";
+            clstOrderCollection.ThisOrder = testItem;
+            PrimaryKey = clstOrderCollection.Add();
             testItem.OrderId = PrimaryKey;
-            clstOrderCollection.FilterByOrderId(PrimaryKey.ToString());
+            clstOrderCollection.ThisOrder.FindID(PrimaryKey);
             clstOrderCollection.Delete();
-            string Found = "0";
-            if (Found == "0") { Found1 = true; }
-            Assert.IsFalse(Found1);
+             clstOrderCollection.ThisOrder.FindID(PrimaryKey);
+            Assert.AreEqual(PrimaryKey,clstOrderCollection.ThisOrder.FindID(PrimaryKey));
         }
         [TestMethod]
         public void clsOrderCollectionAddOK()
@@ -57,7 +58,7 @@ namespace PizzaProjectTesting
             Int32 PrimaryKey = 0;
             testItem.OrderId = 0;
             testItem.CardNumber = "1234567891234567";
-            testItem.CardExpiryNumber = new DateTime(10 / 12 / 2010); ;
+            testItem.CardExpiryNumber = DateTime.Today ;
             testItem.CardSecurityCode = "123456";
             testItem.CustomerId = "22";
             testItem.CustomerMobile = "12345678912";
@@ -65,10 +66,13 @@ namespace PizzaProjectTesting
             testItem.DeliveryTime = 200.ToString();
             testItem.Price = 200;
             testItem.Voucher = "voucher";
-            clstOrderCollection.ThisOrder.OrderId = PrimaryKey;
+            testItem.Email = "ac@gmail.com";
+            testItem.OrderDescription = "Pizza 1";
+            clstOrderCollection.ThisOrder = testItem;
             PrimaryKey = clstOrderCollection.Add();
+            testItem.OrderId = PrimaryKey;
             clstOrderCollection.ThisOrder.FindID(PrimaryKey);
-            Assert.AreEqual(clstOrderCollection.ThisOrder.OrderId, testItem.OrderId);
+            Assert.AreEqual(clstOrderCollection.ThisOrder, testItem);
         }
     }
 }
