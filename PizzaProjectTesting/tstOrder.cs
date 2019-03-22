@@ -618,7 +618,7 @@ namespace PizzaProjectTesting
             clsOrder cOrder = new clsOrder();
             int deliveryTime = 60;
             cOrder.DeliveryTime = deliveryTime.ToString();
-            Assert.AreEqual(cOrder.DeliveryTime, deliveryTime);
+            Assert.AreEqual(cOrder.DeliveryTime, deliveryTime.ToString());
         }
         [TestMethod]
         public void OrderIDOK()
@@ -652,7 +652,7 @@ namespace PizzaProjectTesting
             string Error = "";
             int ID = 2;
             Error = cOrder.FindID(ID).ToString();
-            Assert.AreEqual(Error,"");
+            Assert.AreEqual(Error,"2");
         }
 
       
