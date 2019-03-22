@@ -189,16 +189,17 @@ namespace PizzaClassLibrary
                 mCustomerId = value;
             } }
 
-        public string FindID(string iD) // cant be letters
+        public int FindID(int ID) // cant be letters
         {
             //checking if the id is not empty
-            if (iD != "")
+            if (ID !=-1)
             {
-                return "";
+                OrderId = ID;
+                return OrderId;
             }
             else
                 //if it is return error
-                return "ID cannot be blank";
+                return 0;
         }
         public string Valid(string cardNumber, string cardSecurityCode, DateTime cardExpiryDate, string customerMobile, string deliveryAddress, int deliveryTime, string customerId, int price, string voucher)
         {

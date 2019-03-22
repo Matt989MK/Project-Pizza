@@ -67,7 +67,7 @@ namespace PizzaProjectTesting
             testItem.Voucher = "voucher";
             clstOrderCollection.ThisOrder.OrderId = PrimaryKey;
             PrimaryKey = clstOrderCollection.Add();
-            clstOrderCollection.ThisOrder.FindID(PrimaryKey.ToString());
+            clstOrderCollection.ThisOrder.FindID(PrimaryKey);
             Assert.AreEqual(clstOrderCollection.ThisOrder.OrderId, testItem.OrderId);
         }
     }

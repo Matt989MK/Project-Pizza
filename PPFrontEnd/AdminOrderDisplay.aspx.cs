@@ -53,5 +53,15 @@ namespace PPFrontEnd
             lbOrderList.DataBind();
 
         }
+
+        protected void btHomepage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Homepage.aspx");
+        }
+
+        protected void btDeleteRecord_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DeletePage.aspx");
+        }
     }
 }

@@ -650,8 +650,8 @@ namespace PizzaProjectTesting
         {
             clsOrder cOrder = new clsOrder();
             string Error = "";
-            string ID = "2";
-            Error = cOrder.FindID(ID);
+            int ID = 2;
+            Error = cOrder.FindID(ID).ToString();
             Assert.AreEqual(Error,"");
         }
 

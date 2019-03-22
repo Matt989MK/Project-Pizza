@@ -23,7 +23,7 @@ namespace PPFrontEnd
                 OrderId = Convert.ToInt32(lstDeleteRecord.SelectedValue);
                 Session["OrderId"] = OrderId;
                 clsOrderCollection clsOrderCollection = new clsOrderCollection();
-                clsOrderCollection.ThisOrder.FindID(OrderId.ToString());
+                clsOrderCollection.ThisOrder.FindID(OrderId);
                 clsOrderCollection.Delete();
                 lbError.Text = "Deleted record";
 
@@ -33,6 +33,11 @@ namespace PPFrontEnd
                 lbError.Text = "Please select appropriate orderId";
             }
            
+        }
+
+        protected void btBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminOrderDisplay.aspx");
         }
     }
 }
