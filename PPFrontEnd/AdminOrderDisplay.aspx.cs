@@ -18,7 +18,7 @@ namespace PPFrontEnd
        //finish this bit and add delete
 
         
-         
+    
         }
 
         protected void tbDisplayRecords_TextChanged(object sender, EventArgs e)
@@ -28,18 +28,26 @@ namespace PPFrontEnd
 
         protected void btGetRecords_Click(object sender, EventArgs e)
         {
+            //createa and instance of clsOrderCollection
             clsOrderCollection clsOrderConnection = new clsOrderCollection();
-
+            //set datasource to clsOrderConnection OrderList
             lbOrderList.DataSource = clsOrderConnection.OrderList;
+            //set paraemters to OrderId and display it
+            lbOrderList.DataTextField = "OrderId";
             lbOrderList.DataValueField = "OrderId";
+
             lbOrderList.DataTextField = "CardNumber";
+            lbOrderList.DataValueField = "CardNumber";
             lbOrderList.DataTextField = "CardSecurityCode";
+            lbOrderList.DataValueField = "CardSecurityCode";
             lbOrderList.DataTextField = "CardExpiryNumber";
+            lbOrderList.DataValueField = "CardExpiryNumber";
+
             lbOrderList.DataTextField = "DeliveryAddress";
-            lbOrderList.DataTextField = "CustomerMobile";
-            lbOrderList.DataTextField = "Email";
-            lbOrderList.DataTextField = "Voucher";
-            lbOrderList.DataTextField = "OrderDescription";
+            //lbOrderList.DataTextField = "CustomerMobile";
+            //lbOrderList.DataTextField = "Email";
+            //lbOrderList.DataTextField = "Voucher";
+            //lbOrderList.DataTextField = "OrderDescription";
 
 
             lbOrderList.DataBind();

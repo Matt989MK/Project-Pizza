@@ -24,9 +24,13 @@ namespace PizzaProjectTesting
         [TestMethod]
         public void cardNumberOK()
         {
+            //instantion of clsOrder
             clsOrder clsOrder = new clsOrder();
+            //assign cardNumber to a  value
             string cardNumber = "1234567812345678";
+            //compare it with the correct value
             clsOrder.CardNumber = cardNumber;
+            //comparing if they are correct
             Assert.AreEqual(clsOrder.CardNumber,cardNumber);
         }
         [TestMethod]
@@ -95,29 +99,41 @@ namespace PizzaProjectTesting
         {
             //implement
             clsOrder clsOrder = new clsOrder();
+            //error is "" as of now
             String Error = "";
+            //assign value to voucher
             voucher="abcdefksieoasdfghuok";
+            //call valid method and check if it meets criteria
             Error = clsOrder.Valid(cardNumber, cardSecurityCode, cardExpiryDate, customerMobile, deliveryAddress,deliveryTime,CustomerId,price,voucher);//?? add methods
+            //check if the method returned error or no and compare
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
         public void OrderCardVoucherMaxLessOne()
         {
-            //implement
+            //instantiate class clsOrder
             clsOrder clsOrder = new clsOrder();
+            //error assign to ""
             String Error = "";
+            // assign value smaller by 1 from the correct size
             voucher = "abcdefksieoasdfghuo";
+            //check if the method returns error
             Error = clsOrder.Valid(cardNumber, cardSecurityCode, cardExpiryDate, customerMobile, deliveryAddress, deliveryTime, CustomerId, price, voucher);//?? add methods
+            //compare them 
             Assert.AreEqual(Error, "");
         }
         [TestMethod]
         public void OrderCardVoucherMaxPlusOne()
         {
-            //implement
+            //instantiate class clsOrder
             clsOrder clsOrder = new clsOrder();
+            //error assign to ""
             String Error = "";
+            // assign value bigger by 1 from the correct size
             voucher = "abcdefksieoasdfghuoka";
+            //check if the method returns error
             Error = clsOrder.Valid(cardNumber, cardSecurityCode, cardExpiryDate, customerMobile, deliveryAddress, deliveryTime, CustomerId, price, voucher);//?? add methods
+            //compare them
             Assert.AreNotEqual(Error, "");
         }
         [TestMethod]

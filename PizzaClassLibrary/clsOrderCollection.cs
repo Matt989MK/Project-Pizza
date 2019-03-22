@@ -9,55 +9,65 @@ namespace PizzaLibraryClass
 {
     public class clsOrderCollection
     {
+        //Creating database connection
         private clsDataConnection dbConnection = new clsDataConnection();
         private clsOrder mThisOrder = new clsOrder();
         List<clsOrder> mOrderList = new List<clsOrder>();
-
+        //this is list of all the orders, instantion of class clsOrder
         public List<clsOrder> OrderList
         {
             get
             {
+                //return the private data
                 return mOrderList;
             }
             set
             {
+                //set the private data
                 mOrderList = value;
             }
         }
+        //this is a constructor
         public clsOrderCollection()
         {
+           //creating the database instantion
             clsDataConnection DB = new clsDataConnection();
+            //executing the select procedure
             DB.Execute("sproc_tblOrder_Select");
+            //calling the method to populate the listBox with parameter Orders.mdf
             PopulateArray(DB);
         }
 
         private void PopulateArray(clsDataConnection DB)
         {
+            //index variable to go through records
             Int32 Index = 0;
+            //amount of records in the database
             Int32 RecordCount = DB.Count;
+            //assigning mOrderList to a list of clsOrder
             mOrderList = new List<clsOrder>();
             while( Index < RecordCount)
             {
                 clsOrder NewOrder = new clsOrder();
-                //get the house no from the query results
+                //get the CardNumber from the query results
                 NewOrder.CardNumber = Convert.ToString(DB.DataTable.Rows[Index]["CardNumber"]);
-                //get the street from the query results
+                //get the CardSecurityNumber from the query results
                 NewOrder.CardSecurityCode = Convert.ToString(DB.DataTable.Rows[Index]["CardSecurityNumber"]);
-                //get the post code from the query results
+                //get the CardExpiryDate from the query results
                 NewOrder.CardExpiryNumber = Convert.ToDateTime(DB.DataTable.Rows[Index]["CardExpiryDate"]);
-                //get the address no from the query results
+                //get the CustomerAddress from the query results
                 NewOrder.DeliveryAddress = Convert.ToString(DB.DataTable.Rows[Index]["CustomerAddress"]);
-                //get the address no from the query results
+                //get the MobilePhone from the query results
                 NewOrder.CustomerMobile = Convert.ToString(DB.DataTable.Rows[Index]["MobilePhone"]);
-                //get the address no from the query results
+                //get the Email from the query results
                 NewOrder.CustomerMobile = Convert.ToString(DB.DataTable.Rows[Index]["Email"]);
-                //get the address no from the query results
+                //get the Voucher from the query results
                 NewOrder.Voucher = Convert.ToString(DB.DataTable.Rows[Index]["Voucher"]);
-                //get the address no from the query results
+                //get the DeliveryTime from the query results
                 NewOrder.DeliveryTime = Convert.ToString(DB.DataTable.Rows[Index]["DeliveryTime"]);
-                //get the address no from the query results
+                //get the DeliveryPrice from the query results
                 NewOrder.DeliveryPrice = Convert.ToInt32(DB.DataTable.Rows[Index]["DeliveryPrice"]);
-                //get the address no from the query results
+                //get the OrderDescription from the query results
                 NewOrder.OrderDescription = Convert.ToString(DB.DataTable.Rows[Index]["OrderDescription"]);
                 //add the order to the list
                 mOrderList.Add(NewOrder);
@@ -71,10 +81,12 @@ namespace PizzaLibraryClass
         {
             get
             {
+                //return the private data
                 return mThisOrder;
             }
             set
             {
+                //set the private data
                 mThisOrder = value;
             }
         }
@@ -84,7 +96,6 @@ namespace PizzaLibraryClass
             Int32 PrimaryKey;
             //create a connection to the database
             clsDataConnection NewOrder = new clsDataConnection();
-            // NewOrder.AddParameter("@OrderId", mThisOrder.OrderId);
             //add the CardNumber parameter
             NewOrder.AddParameter("@CardNumber", mThisOrder.CardNumber);
             //add the CardSecurityNumber parameter
@@ -111,14 +122,7 @@ namespace PizzaLibraryClass
             //return the primary key value of the new record
             return PrimaryKey;
         }
-        //public Int32 SelectAll()
-        //{
-           
-        //    //create a connection to the database
-        //    clsDataConnection Orders = new clsDataConnection();
-        //    Orders.Execute("sproc_tblOrder_Select");
-            
-        //}
+
         //function for the public Update method
         public void Update()
         {
@@ -172,15 +176,7 @@ namespace PizzaLibraryClass
             //execute the stored procedure to delete the address
             dBConnection.Execute("sproc_tblOrder_FilterByOrderId");
         }
-        //public void DisplayAll()
-        /////it accepts a single parameter PostCode and returns no value
-        //{
-        //    //initialise the DBConnection
-        //    clsDataConnection dBConnection = new clsDataConnection();
-            
-        //    //execute the stored procedure to delete the address
-        //    dBConnection.Execute("sproc_tblOrder_Select");
-        //}
+
         ///this function defines the public property Count
         public Int32 Count
         ///it returns the count of records currently in QueryResults
@@ -194,46 +190,7 @@ namespace PizzaLibraryClass
             }
         }
 
-        //public List<clsOrder> OrderList
-        //{
-        //    get
-        //    {
-        //        clsDataConnection dBConnection = new clsDataConnection();
-           
-        //        List<clsOrder> mOrderList = new List<clsOrder>();
-        //        Int32 Index = 0;
-        //        while (Index < dBConnection.Count)
-        //        {
-        //            clsOrder NewOrder = new clsOrder();
-        //            //get the house no from the query results
-        //            NewOrder.CardNumber = Convert.ToString(dBConnection.DataTable.Rows[Index]["CardNumber"]);
-        //            //get the street from the query results
-        //            NewOrder.CardSecurityCode = Convert.ToString(dBConnection.DataTable.Rows[Index]["CardSecurityNumber"]);
-        //            //get the post code from the query results
-        //            NewOrder.CardExpiryNumber = Convert.ToDateTime(dBConnection.DataTable.Rows[Index]["CardExpiryDate"]);
-        //            //get the address no from the query results
-        //            NewOrder.DeliveryAddress = Convert.ToString(dBConnection.DataTable.Rows[Index]["CustomerAddress"]);
-        //            //get the address no from the query results
-        //            NewOrder.CustomerMobile = Convert.ToString(dBConnection.DataTable.Rows[Index]["MobilePhone"]);
-        //            //get the address no from the query results
-        //            NewOrder.CustomerMobile = Convert.ToString(dBConnection.DataTable.Rows[Index]["Email"]);
-        //            //get the address no from the query results
-        //            NewOrder.Voucher = Convert.ToString(dBConnection.DataTable.Rows[Index]["Voucher"]);
-        //            //get the address no from the query results
-        //            NewOrder.DeliveryTime = Convert.ToString(dBConnection.DataTable.Rows[Index]["DeliveryTime"]);
-        //            //get the address no from the query results
-        //            NewOrder.DeliveryPrice = Convert.ToInt32(dBConnection.DataTable.Rows[Index]["DeliveryPrice"]);
-        //            //get the address no from the query results
-        //            NewOrder.OrderDescription = Convert.ToString(dBConnection.DataTable.Rows[Index]["OrderDescription"]);
-        //            //increment the index
-        //            Index++;
-        //            //add the order to the list
-        //            mOrderList.Add(NewOrder);
-        //        }
-        //        //return the list of addresses
-        //        return mOrderList;
-        //    }
-        //}
+      
     }
 }
 
