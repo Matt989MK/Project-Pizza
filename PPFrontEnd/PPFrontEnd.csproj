@@ -82,6 +82,7 @@
     <Content Include="Checkout.aspx" />
     <Content Include="CustomerDetails.aspx" />
     <Content Include="DeletedStaff.aspx" />
+    <Content Include="DeletePage.aspx" />
     <Content Include="FailedOrder.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
@@ -127,6 +128,13 @@
     </Compile>
     <Compile Include="DeletedStaff.aspx.designer.cs">
       <DependentUpon>DeletedStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePage.aspx.cs">
+      <DependentUpon>DeletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeletePage.aspx.designer.cs">
+      <DependentUpon>DeletePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="FailedOrder.aspx.cs">
       <DependentUpon>FailedOrder.aspx</DependentUpon>
