@@ -17,7 +17,7 @@
         </p>
         <p>
             <asp:Button ID="btApplyVoucher" runat="server" style="z-index: 1; left: 970px; top: 15px; position: absolute" Text="Apply Voucher" OnClick="btApplyVoucher_Click" />
-            <asp:TextBox ID="tbVoucherCode" runat="server" style="z-index: 1; left: 773px; top: 18px; position: absolute"></asp:TextBox>
+            <asp:TextBox ID="tbVoucherCode" runat="server" style="z-index: 1; left: 773px; top: 18px; position: absolute" OnTextChanged="tbVoucherCode_TextChanged"></asp:TextBox>
             <asp:Label ID="lbCardSecurityCode" runat="server" style="z-index: 1; left: 35px; top: 89px; position: absolute" Text="Card Security Code"></asp:Label>
             <asp:Label ID="lbAddress" runat="server" style="z-index: 1; left: 396px; top: 47px; position: absolute" Text="Address"></asp:Label>
         </p>

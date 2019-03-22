@@ -14,9 +14,19 @@ namespace PPFrontEnd
 
         }
 
+        //event handler for the add button
         protected void btnAddStaff_Click(object sender, EventArgs e)
         {
+            //store -1 into the session object to indicate this is a new record
+            Session["StaffNo"] = -1;
+            //redirect the user to the data entry page
             Response.Redirect("AddStaff.aspx");
+        }
+
+        protected void btnDeleteStaff_Click(object sender, EventArgs e)
+        {
+            //redirect the user to the data entry page
+            Response.Redirect(".aspx");
         }
     }
 }

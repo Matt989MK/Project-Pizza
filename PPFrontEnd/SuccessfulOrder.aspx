@@ -11,6 +11,9 @@
         <div>
         </div>
         <asp:Label ID="lbOrderSuccesful" runat="server" style="z-index: 1; left: 10px; top: 37px; position: absolute" Text="Order Successful"></asp:Label>
+        <p>
+            <asp:Button ID="btHomepage" runat="server" OnClick="btHomepage_Click" style="z-index: 1; left: 20px; top: 96px; position: absolute" Text="Go back to Homepage" />
+        </p>
     </form>
 </body>
 </html>
